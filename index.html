@@ -1,331 +1,123 @@
 
-/* ===== SAROVARAM PREMIUM 3D HERO ===== */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sarovaram Corporate Solutions</title>
 
-.hero-3d {
-  min-height: 680px;
-  padding: 90px 7%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 35px;
-  overflow: hidden;
-  position: relative;
-  background:
-    radial-gradient(ellipse at 78% 48%,
-      rgba(245, 158, 11, 0.13), transparent 42%),
-    linear-gradient(135deg, #07111f, #101c30 65%, #080e19);
-  color: #fff;
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#071426;color:white}
+nav{min-height:82px;padding:18px 5%;display:flex;justify-content:space-between;align-items:center;gap:20px;background:#071426;border-bottom:1px solid #ffffff20}
+.logo{font-size:23px;font-weight:800;letter-spacing:1px}
+.logo span{color:#f5b942}
+nav a{color:white;text-decoration:none;margin:0 10px;font-size:14px}
+.btn{display:inline-block;padding:15px 22px;background:#f5b942;color:#101827;text-decoration:none;font-weight:bold;border-radius:6px}
+.hero{min-height:610px;padding:65px 6%;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:25px;overflow:hidden;background:radial-gradient(ellipse at 80% 45%,#1e4268 0%,#0b1c32 50%,#06111f 100%)}
+.tag{color:#f5b942;letter-spacing:2px;font-size:12px;font-weight:bold}
+h1{font-family:Georgia,serif;font-size:clamp(38px,4.5vw,64px);line-height:1.08;margin:22px 0}
+h1 span{color:#f5b942}
+.description{color:#d1dae7;line-height:1.8;font-size:16px;max-width:540px;margin-bottom:28px}
+.outline{display:inline-block;padding:14px 20px;border:1px solid #f5b942;color:white;text-decoration:none;border-radius:6px;margin:8px 0 0 8px}
+
+/* ANIMATED CSS 3D BUILDING */
+.scene{height:450px;position:relative;display:flex;align-items:center;justify-content:center;perspective:1000px}
+.platform{position:absolute;width:340px;height:110px;bottom:36px;border:1px solid #f5b94280;border-radius:50%;transform:rotateX(68deg);box-shadow:0 0 35px #f5b94220;animation:orbit 14s linear infinite}
+.building{position:relative;width:245px;height:330px;transform-style:preserve-3d;transform:rotateY(-23deg);animation:float 6s ease-in-out infinite;z-index:2}
+.tower{position:absolute;bottom:20px;border:1px solid #dba94390;background:linear-gradient(90deg,#12263b,#34536b 45%,#102137);box-shadow:inset 0 0 25px #8ab8d325}
+.main{left:55px;width:135px;height:275px;transform:skewY(-2deg);overflow:hidden}
+.back{left:0;width:70px;height:215px;transform:translateZ(-25px);background:linear-gradient(90deg,#0a1728,#213a51)}
+.side{left:190px;width:48px;height:275px;transform:skewY(27deg);transform-origin:left;background:linear-gradient(90deg,#142a40,#081321)}
+.glass{position:absolute;inset:12px 9px;background:repeating-linear-gradient(90deg,transparent 0 18px,#f5b94285 19px 20px),repeating-linear-gradient(0deg,transparent 0 22px,#f5b94265 23px 24px);animation:glow 3s ease-in-out infinite alternate}
+.roof{position:absolute;top:35px;left:40px;width:160px;height:18px;background:linear-gradient(90deg,#f5b942,#fff0bc,#b77917);transform:skewY(-8deg);box-shadow:0 0 22px #f5b94285}
+.base{position:absolute;bottom:0;left:15px;width:240px;height:28px;background:linear-gradient(90deg,#172b40,#53697a,#101b2b);transform:rotateX(50deg);border:1px solid #f5b94280}
+.orbit{position:absolute;width:370px;height:145px;border:1px solid #f5b94270;border-radius:50%;transform:rotateX(65deg) rotateZ(-25deg);animation:orbit 12s linear infinite}
+.orbit.two{width:300px;height:120px;border-color:#8bbce055;animation-duration:18s;animation-direction:reverse}
+.info{position:absolute;z-index:4;padding:13px 16px;background:#0b1b2de8;border:1px solid #f5b94280;border-radius:8px;box-shadow:0 10px 35px #0006;backdrop-filter:blur(8px);font-size:12px;animation:float 4s ease-in-out infinite}
+.info strong{display:block;color:#f5b942;font-size:20px;margin-bottom:4px}
+.info.top{top:48px;right:0}
+.info.bottom{bottom:48px;left:0;animation-delay:-2s}
+.cards{padding:0 5% 45px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{padding:24px;background:#09192b;border:1px solid #ffffff24;border-radius:9px}
+.card h2{color:#f5b942;font-size:19px;margin-bottom:12px}
+.card p{color:#cbd5e1;line-height:1.7;font-size:14px}
+.card a{display:inline-block;margin-top:18px;color:#f5b942;text-decoration:none}
+@keyframes float{0%,100%{translate:0 0}50%{translate:0 -12px}}
+@keyframes orbit{from{rotate:0deg}to{rotate:360deg}}
+@keyframes glow{from{opacity:.5}to{opacity:1}}
+@media(max-width:800px){
+ nav{flex-wrap:wrap}
+ nav .links{width:100%;display:flex;flex-wrap:wrap;gap:12px}
+ nav a{margin:0}
+ .hero{grid-template-columns:1fr;padding:45px 6% 15px}
+ .scene{height:390px;transform:scale(.9);margin:0 -12px}
+ .cards{grid-template-columns:1fr}
+ .hero .description{font-size:15px}
 }
-
-.hero-content {
-  position: relative;
-  z-index: 3;
-  animation: contentEnter 1s ease both;
+@media(prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none!important;scroll-behavior:auto!important}
 }
+</style>
+</head>
 
-.hero-tag {
-  display: inline-block;
-  color: #f5b942;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 3px;
-  margin-bottom: 24px;
-}
+<body>
+<nav>
+  <div class="logo"><span>S</span> SAROVARAM<br><small style="font-size:10px;color:#f5b942;letter-spacing:2px">CORPORATE SOLUTIONS</small></div>
+  <div class="links">
+    <a href="index.html">Home</a>
+    <a href="capital-advisors.html">Capital Advisors</a>
+    <a href="fincorp.html">Fincorp</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <a class="btn" href="contact.html">Discuss Your Requirement →</a>
+</nav>
 
-.hero-content h1 {
-  font-size: clamp(38px, 5vw, 68px);
-  line-height: 1.1;
-  letter-spacing: -2px;
-  margin: 0 0 25px;
-  font-weight: 800;
-}
+<section class="hero">
+  <div>
+    <div class="tag">FUNDING &nbsp; | &nbsp; FINANCING &nbsp; | &nbsp; COMMERCIAL REAL ESTATE</div>
+    <h1>Funding and <span>Commercial Property</span> Advisory for Kerala Businesses</h1>
+    <p class="description">We help business owners, developers and investors raise capital, secure financing and close commercial real estate deals, from first conversation to final paperwork.</p>
+    <a class="btn" href="contact.html">Discuss Your Requirement →</a>
+    <a class="outline" href="fincorp.html">Check Loan Eligibility</a>
+  </div>
 
-.hero-content h1 span {
-  display: block;
-  color: #f5b942;
-}
+  <div class="scene">
+    <div class="orbit"></div>
+    <div class="orbit two"></div>
+    <div class="platform"></div>
 
-.hero-content p {
-  max-width: 510px;
-  color: #bdc8d8;
-  font-size: 17px;
-  line-height: 1.9;
-  margin-bottom: 32px;
-}
+    <div class="building">
+      <div class="tower back"></div>
+      <div class="tower main"><div class="glass"></div></div>
+      <div class="tower side"></div>
+      <div class="roof"></div>
+      <div class="base"></div>
+    </div>
 
-.hero-btn {
-  display: inline-block;
-  padding: 15px 25px;
-  border-radius: 5px;
-  color: #101827;
-  background: linear-gradient(120deg, #f5b942, #ffe4a1);
-  text-decoration: none;
-  font-weight: 800;
-  transition: transform .3s, box-shadow .3s;
-}
+    <div class="info top">✦ Premium Properties</div>
+    <div class="info bottom"><strong>Capital Advisory</strong>Business Growth Solutions</div>
+  </div>
+</section>
 
-.hero-btn:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 35px #f5b94245;
-}
+<section class="cards">
+  <div class="card">
+    <h2>▥ Sarovaram Capital Advisors</h2>
+    <p>Capital raising, commercial property advisory, mergers and acquisitions, strategic partnerships and business expansion.</p>
+    <a href="capital-advisors.html">Explore Capital Advisors →</a>
+  </div>
+  <div class="card">
+    <h2>▤ Sarovaram Fincorp</h2>
+    <p>Business loan facilitation, loan against property, working capital support and documentation guidance.</p>
+    <a href="fincorp.html">Explore Fincorp →</a>
+  </div>
+  <div class="card">
+    <h2>⌖ Kerala Market Focus</h2>
+    <p>Local market understanding to connect businesses and investors with relevant financing and commercial property opportunities.</p>
+    <a href="about.html">Discover Sarovaram →</a>
+  </div>
+</section>
 
-/* 3D SCENE */
-
-.building-scene {
-  position: relative;
-  min-height: 500px;
-  perspective: 1000px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  isolation: isolate;
-}
-
-.building {
-  position: relative;
-  width: 300px;
-  height: 365px;
-  transform-style: preserve-3d;
-  transform: rotateY(-22deg) rotateX(3deg);
-  animation: buildingFloat 6s ease-in-out infinite;
-  z-index: 2;
-}
-
-.tower {
-  position: absolute;
-  bottom: 35px;
-  border: 1px solid rgba(245, 185, 66, .45);
-  background: linear-gradient(135deg,
-    rgba(54, 85, 116, .94),
-    rgba(8, 19, 34, .98));
-  box-shadow:
-    inset 0 0 25px #5f91b52a,
-    0 15px 40px #00000040;
-}
-
-.tower-main {
-  width: 155px;
-  height: 300px;
-  left: 75px;
-  bottom: 35px;
-  transform: skewY(-3deg);
-  overflow: hidden;
-  background: linear-gradient(90deg,
-    #152d46, #27465e 45%, #102137);
-}
-
-.tower-back {
-  width: 100px;
-  height: 220px;
-  left: 5px;
-  bottom: 35px;
-  transform: translateZ(-45px) skewY(-3deg);
-  background: linear-gradient(90deg, #0d1a2b, #203b52);
-}
-
-.tower-side {
-  width: 55px;
-  height: 300px;
-  left: 230px;
-  bottom: 35px;
-  transform: skewY(28deg);
-  transform-origin: left;
-  background: linear-gradient(90deg, #15273b, #091321);
-}
-
-.windows {
-  position: absolute;
-  inset: 15px 12px;
-  background:
-    repeating-linear-gradient(
-      to right,
-      transparent 0 18px,
-      rgba(245, 185, 66, .48) 19px 20px
-    ),
-    repeating-linear-gradient(
-      to bottom,
-      transparent 0 24px,
-      rgba(245, 185, 66, .42) 25px 26px
-    );
-  opacity: .9;
-  animation: windowGlow 4s ease-in-out infinite alternate;
-}
-
-.building-base {
-  position: absolute;
-  width: 285px;
-  height: 35px;
-  bottom: 0;
-  left: 7px;
-  background: linear-gradient(90deg, #14263b, #456078, #101c2d);
-  transform: rotateX(55deg);
-  transform-origin: top;
-  border: 1px solid #dba94365;
-  box-shadow: 0 20px 45px #0008;
-}
-
-/* GOLD ORBITS */
-
-.orbit {
-  position: absolute;
-  width: 390px;
-  height: 150px;
-  border: 1px solid rgba(245, 185, 66, .5);
-  border-radius: 50%;
-  transform: rotate(-25deg) rotateX(62deg);
-  z-index: 1;
-}
-
-.orbit-one {
-  animation: orbitRotate 12s linear infinite;
-}
-
-.orbit-two {
-  width: 330px;
-  height: 125px;
-  border-color: rgba(129, 176, 220, .32);
-  transform: rotate(40deg) rotateX(65deg);
-  animation: orbitRotate 16s linear infinite reverse;
-}
-
-.floor-glow {
-  position: absolute;
-  width: 300px;
-  height: 70px;
-  bottom: 30px;
-  background: #e9a92b;
-  opacity: .17;
-  filter: blur(40px);
-  border-radius: 50%;
-  z-index: 0;
-}
-
-/* FLOATING INFO CARDS */
-
-.floating-label {
-  position: absolute;
-  z-index: 4;
-  padding: 14px 18px;
-  background: rgba(12, 25, 42, .84);
-  border: 1px solid rgba(245, 185, 66, .38);
-  border-radius: 9px;
-  color: #fff;
-  box-shadow: 0 15px 40px #0005;
-  backdrop-filter: blur(12px);
-  animation: cardFloat 4s ease-in-out infinite;
-}
-
-.label-top {
-  top: 55px;
-  right: 0;
-  font-size: 12px;
-}
-
-.label-bottom {
-  bottom: 55px;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  animation-delay: -2s;
-}
-
-.label-bottom strong {
-  color: #f5b942;
-  font-size: 23px;
-}
-
-.label-bottom small {
-  color: #c1cddd;
-  font-size: 11px;
-}
-
-.status-dot {
-  display: inline-block;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #f5b942;
-  margin-right: 7px;
-  box-shadow: 0 0 12px #f5b942;
-}
-
-/* ANIMATIONS */
-
-@keyframes buildingFloat {
-  0%, 100% {
-    transform: translateY(0) rotateY(-22deg) rotateX(3deg);
-  }
-  50% {
-    transform: translateY(-14px) rotateY(-16deg) rotateX(1deg);
-  }
-}
-
-@keyframes orbitRotate {
-  from { rotate: 0deg; }
-  to { rotate: 360deg; }
-}
-
-@keyframes cardFloat {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-
-@keyframes windowGlow {
-  from { opacity: .55; }
-  to { opacity: 1; }
-}
-
-@keyframes contentEnter {
-  from {
-    opacity: 0;
-    transform: translateY(25px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* MOBILE RESPONSIVE */
-
-@media (max-width: 800px) {
-  .hero-3d {
-    grid-template-columns: 1fr;
-    padding: 65px 6% 35px;
-    gap: 5px;
-  }
-
-  .hero-content h1 {
-    font-size: clamp(36px, 9vw, 52px);
-    letter-spacing: -1px;
-  }
-
-  .hero-content p {
-    font-size: 15px;
-  }
-
-  .building-scene {
-    min-height: 430px;
-    transform: scale(.9);
-    margin: -5px -15px;
-  }
-
-  .label-top {
-    right: -4px;
-  }
-
-  .label-bottom {
-    left: -4px;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .building,
-  .orbit,
-  .floating-label,
-  .windows,
-  .hero-content {
-    animation: none !important;
-  }
-}
+</body>
+</html>
