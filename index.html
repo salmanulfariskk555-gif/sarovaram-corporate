@@ -107,6 +107,10 @@
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;scroll-behavior:auto!important;transition:none!important}.reveal{opacity:1;transform:none}}
     @media(max-width:950px){.hero-grid{grid-template-columns:1fr}.hero-copy{text-align:center}.hero-copy h1,.hero-copy p{margin-inline:auto}.btn-row,.trust-line{justify-content:center}.visual{height:390px}.grid-4{grid-template-columns:repeat(2,1fr)}.grid-3{grid-template-columns:repeat(2,1fr)}.contact-grid{grid-template-columns:1fr}}
     @media(max-width:760px){.section{padding:65px 0}.nav{min-height:68px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:68px;left:0;right:0;background:#071426;border-bottom:1px solid var(--line);padding:18px 20px;flex-direction:column;align-items:stretch;gap:0}.nav-links.open{display:flex}.nav-links a{padding:11px 0}.nav-cta{display:none}.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}.hero{padding:60px 0}.visual{height:340px;transform:scale(.9);margin:-10px 0}.orbit{width:320px}.orbit.two{width:340px}.building{transform:scale(.86) perspective(900px) rotateY(-17deg) rotateX(3deg)}.visual-label{right:0;bottom:0}.stat-row{grid-template-columns:1fr}.footer-top{grid-template-columns:1fr}.container{width:min(var(--max),calc(100% - 30px))}}
+    .floating-whatsapp{position:fixed;right:20px;bottom:24px;z-index:9999;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#25D366;color:#fff;box-shadow:0 8px 24px rgba(0,0,0,.35);border:2px solid rgba(255,255,255,.85);transition:transform .2s}
+    .floating-whatsapp:hover{transform:scale(1.08)}
+    .floating-whatsapp svg{width:31px;height:31px;fill:currentColor}
+    @media(max-width:600px){.floating-whatsapp{width:56px;height:56px;right:15px;bottom:18px}}
   </style>
 </head>
 <body>
@@ -126,8 +130,8 @@
     <div class="container hero-grid">
       <div class="hero-copy">
         <span class="eyebrow">Business Advisory · Capital · Commercial Property</span>
-        <h1>Funding and commercial property advisory for <span class="gold">Kerala businesses.</span></h1>
-        <p>We help business owners, developers and investors explore capital-raising opportunities, financing options and commercial real estate decisions—from the first conversation through planning, coordination and documentation.</p>
+        <h1>Capital &amp; Commercial Property Advisory for <span class="gold">Businesses</span></h1>
+        <p>Supporting business owners, developers and investors with funding opportunities and commercial property decisions.</p>
         <div class="btn-row"><a class="btn btn-primary" href="#contact">Talk to Our Team ↗</a><a class="btn btn-outline" href="#divisions">Explore Our Services</a></div>
         <div class="trust-line"><span>Kerala market focus</span><span>Structured guidance</span><span>End-to-end coordination</span></div>
       </div>
@@ -147,6 +151,19 @@
         <p class="lead">Sarovaram Corporate Solutions works with businesses, entrepreneurs, property owners and investors to assess opportunities and coordinate practical next steps across funding, commercial property and business expansion.</p>
       </div>
       <div class="reveal"><div class="card"><h3>Our approach</h3><ul><li>Understand your goals and business context</li><li>Assess requirements and possible routes</li><li>Explain options, documents and next steps</li><li>Coordinate the process with relevant parties</li></ul></div></div>
+    </div>
+  </section>
+
+  <section class="section" id="legal-entity">
+    <div class="container">
+      <div class="section-head"><span class="eyebrow">Legal Entity &amp; Brand</span><h2>A clear distinction between the company and the brand.</h2>
+        <p class="lead">Sarovaram Corporate Solutions is a business brand operated by Alooma Holdings Private Limited, a company incorporated in India under the Companies Act, 2013.</p>
+      </div>
+      <div class="grid-2">
+        <article class="card"><div class="icon-box">▣</div><h3>Alooma Holdings Private Limited</h3><p><strong>Legal entity</strong></p><p style="margin-top:8px">CIN: U67100KL2020PTC065780</p></article>
+        <article class="card"><div class="icon-box">▤</div><h3>Sarovaram Corporate Solutions</h3><p><strong>Business brand / market-facing identity</strong></p><p style="margin-top:8px">Capital Advisors and Fincorp service divisions.</p></article>
+      </div>
+      <p style="margin-top:22px;font-size:.92rem">All engagements are undertaken by the relevant legal entity or authorised service provider identified in the applicable proposal, engagement letter, invoice or agreement.</p>
     </div>
   </section>
 
@@ -261,7 +278,7 @@
         <div>
           <p>Prefer a general enquiry? Use the verified business contact details and share only basic information at this stage.</p>
           <div class="contact-list">
-            <div class="contact-item"><strong>Phone / WhatsApp</strong><p><a href="https://wa.me/919447907637" target="_blank" rel="noopener noreferrer">94479 07637 · Chat on WhatsApp ↗</a></p></div>
+            <div class="contact-item"><strong>Phone / WhatsApp</strong><p><a href="tel:+919447907637">Call: 94479 07637 ↗</a><br><a href="https://wa.me/919447907637" target="_blank" rel="noopener noreferrer">Chat on WhatsApp ↗</a></p></div>
             <div class="contact-item"><strong>Email</strong><p><a href="mailto:info@sarovaramcorporatesolutions.com">info@sarovaramcorporatesolutions.com</a></p><p style="font-size:.82rem;margin-top:5px">Confirm that this mailbox is active before publishing.</p></div>
             <div class="contact-item"><strong>Office address</strong><p>Greenland Heights, 4th Floor, KRA Business Centre, Near NH Bypass Junction, Nethaji Road, Palarivattom, Kochi, Kerala, India – 682025</p></div>
             <div class="contact-item"><strong>Business hours</strong><p>Please contact us to confirm availability.</p></div>
@@ -277,7 +294,7 @@
             <div class="field"><label for="division">Enquiry type *</label><select id="division" name="division" required><option value="">Select a requirement</option><option>Capital Advisory</option><option>Commercial Real Estate</option><option>Mergers & Acquisitions</option><option>Business Loan Facilitation</option><option>Loan Against Property</option><option>Working Capital</option><option>Business Expansion / Partnership</option><option>Other</option></select></div>
             <div class="field"><label for="message">Briefly describe your requirement *</label><textarea id="message" name="message" required placeholder="Tell us about your business or project and what support you are looking for."></textarea></div>
             <button class="btn btn-primary" type="submit">Prepare Enquiry Message ↗</button>
-            <p class="form-note" id="formStatus" aria-live="polite">Demo form: this button prepares an enquiry message on your device. It does not send data to Sarovaram until a backend/form service is connected.</p>
+            <p class="form-note" id="formStatus" aria-live="polite">Submit opens WhatsApp with your enquiry details filled in. Press Send in WhatsApp to deliver the enquiry.</p>
           </form>
         </div>
       </div>
@@ -288,15 +305,19 @@
 <footer class="site-footer">
   <div class="container">
     <div class="footer-top">
-      <div><a class="brand" href="#home"><span class="brand-mark">S</span><span>SAROVARAM<br><small style="font-weight:500;color:#b8c4d5;letter-spacing:.12em">CORPORATE SOLUTIONS</small></span></a><p style="margin-top:16px;max-width:380px">Business funding and commercial property advisory support for businesses, entrepreneurs and investors.</p></div>
+      <div><a class="brand" href="#home"><span class="brand-mark">S</span><span>SAROVARAM<br><small style="font-weight:500;color:#b8c4d5;letter-spacing:.12em">CORPORATE SOLUTIONS</small></span></a><p style="margin-top:16px;max-width:380px">Sarovaram Corporate Solutions is a business brand operated by Alooma Holdings Private Limited.</p></div>
       <div><h3>Explore</h3><div class="footer-links"><a href="#about">About Us</a><a href="#divisions">Business Divisions</a><a href="#services">Services</a><a href="#process">Our Process</a><a href="#contact">Contact</a></div></div>
-      <div><h3>Contact</h3><div class="footer-links"><a href="https://wa.me/919447907637" target="_blank" rel="noopener noreferrer">WhatsApp: 94479 07637</a><a href="mailto:info@sarovaramcorporatesolutions.com">info@sarovaramcorporatesolutions.com</a><span>Greenland Heights, 4th Floor, KRA Business Centre, Near NH Bypass Junction, Nethaji Road, Palarivattom, Kochi, Kerala, India – 682025</span></div><h3 style="margin-top:20px">Information</h3><div class="footer-links"><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms & Conditions</a><a href="#faq">FAQs</a></div></div>
+      <div><h3>Contact</h3><div class="footer-links"><a href="tel:+919447907637">Call: 94479 07637</a><a href="https://wa.me/919447907637" target="_blank" rel="noopener noreferrer">WhatsApp: 94479 07637</a><a href="mailto:info@sarovaramcorporatesolutions.com">info@sarovaramcorporatesolutions.com</a><span>Greenland Heights, 4th Floor, KRA Business Centre, Near NH Bypass Junction, Nethaji Road, Palarivattom, Kochi, Kerala, India – 682025</span></div><h3 style="margin-top:20px">Information</h3><div class="footer-links"><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms & Conditions</a><a href="#faq">FAQs</a></div></div>
     </div>
     <p class="disclaimer"><strong style="color:#f7f9fc">Important disclaimer:</strong> Sarovaram Fincorp is a loan facilitation service and not a lender. Loan approval, interest rates, fees and terms are determined by the relevant lending partner. Sarovaram does not guarantee loan approval, funding, investment returns, property transactions or any particular outcome. All services are subject to case-specific assessment and applicable terms.</p>
+    <p class="disclaimer" style="margin-top:14px"><strong style="color:#f7f9fc">Legal entity:</strong> Alooma Holdings Private Limited · CIN: U67100KL2020PTC065780. Sarovaram Corporate Solutions is the business brand. All engagements are undertaken by the relevant legal entity or authorised service provider identified in the applicable proposal, engagement letter, invoice or agreement.</p>
     <p class="copyright">© <span id="year"></span> Sarovaram Corporate Solutions. All rights reserved.</p>
   </div>
 </footer>
 
+<a class="floating-whatsapp" href="https://wa.me/919447907637?text=Hello%20Sarovaram%20Corporate%20Solutions%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener noreferrer" aria-label="Chat with Sarovaram on WhatsApp" title="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.02 3C8.86 3 3.03 8.77 3.03 15.87c0 2.28.61 4.5 1.77 6.45L3 29l6.89-1.79a13.1 13.1 0 0 0 6.13 1.52h.01c7.16 0 12.99-5.77 12.99-12.87 0-3.44-1.35-6.67-3.8-9.1A13 13 0 0 0 16.02 3zm.01 23.54h-.01a10.8 10.8 0 0 1-5.49-1.5l-.39-.23-4.09 1.06 1.09-3.95-.25-.4a10.57 10.57 0 0 1-1.65-5.65c0-5.93 4.85-10.76 10.8-10.76 2.88 0 5.59 1.12 7.63 3.15a10.66 10.66 0 0 1 3.17 7.6c0 5.93-4.85 10.76-10.81 10.76zm5.93-8.06c-.32-.16-1.9-.93-2.2-1.04-.3-.11-.51-.16-.73.16-.21.32-.84 1.04-1.03 1.25-.19.21-.38.24-.7.08-.32-.16-1.35-.49-2.57-1.56-.95-.83-1.59-1.86-1.78-2.18-.19-.32-.02-.49.14-.65.14-.14.32-.38.48-.57.16-.19.21-.32.32-.54.11-.21.05-.4-.03-.56-.08-.16-.73-1.73-1-2.37-.26-.62-.53-.54-.73-.55h-.62c-.21 0-.56.08-.86.4-.3.32-1.13 1.1-1.13 2.67s1.16 3.09 1.32 3.3c.16.21 2.28 3.46 5.52 4.85.77.33 1.37.53 1.84.68.77.24 1.47.21 2.02.13.62-.09 1.9-.77 2.17-1.52.27-.75.27-1.39.19-1.52-.08-.13-.29-.21-.62-.37z"/></svg>
+</a>
 <script>
   const menuToggle = document.getElementById('menuToggle');
   const navLinks = document.getElementById('navLinks');
@@ -321,30 +342,21 @@
   document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
   function prepareEnquiry(formId, statusId, title) {
-    document.getElementById(formId).addEventListener('submit', function(event) {
+    const form = document.getElementById(formId);
+    if (!form) return;
+    form.addEventListener('submit', function(event) {
       event.preventDefault();
       const data = new FormData(this);
-      const lines = [title];
+      const lines = [title, ''];
       for (const [key, value] of data.entries()) {
         if (String(value).trim()) lines.push(key + ': ' + value);
       }
+      lines.push('', 'Sent from Sarovaram Corporate Solutions website.');
       const message = lines.join('\n');
       const status = document.getElementById(statusId);
-      if (navigator.share) {
-        navigator.share({title: title, text: message}).then(() => {
-          status.textContent = 'Share option opened. The enquiry is sent only if you choose a recipient and confirm.';
-        }).catch(() => {
-          status.textContent = 'Share cancelled. No enquiry was sent.';
-        });
-      } else if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(message).then(() => {
-          status.textContent = 'Enquiry message copied. Send it using verified Sarovaram contact details after they are added.';
-        }).catch(() => {
-          status.textContent = 'Could not copy automatically. Connect a backend or form service to receive enquiries online.';
-        });
-      } else {
-        status.textContent = 'This demo does not send the form. Connect a backend or form service to receive enquiries online.';
-      }
+      status.textContent = 'WhatsApp is opening with your enquiry prepared. Please press Send in WhatsApp to deliver it.';
+      const url = 'https://wa.me/919447907637?text=' + encodeURIComponent(message);
+      window.open(url, '_blank', 'noopener,noreferrer');
     });
   }
   prepareEnquiry('capitalForm', 'capitalStatus', 'Sarovaram Capital Advisors Enquiry');
