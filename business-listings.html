@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore business buying and selling opportunities with Sarovaram Corporate Solutions. Submit your business listing or enquire about acquisition opportunities.">
+  <title>Business Listings | Sarovaram Corporate Solutions</title>
+
+  <style>
+    :root {
+      --navy: #07182B;
+      --navy-light: #102943;
+      --cyan: #79D2F5;
+      --gold: #D7B675;
+      --white: #FFFFFF;
+      --muted: #C3CFDA;
+      --border: rgba(121, 210, 245, 0.22);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--navy);
+      color: var(--white);
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: auto;
+    }
+
+    header {
+      background: #061321;
+      border-bottom: 1px solid var(--border);
+      padding: 20px 0;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      color: var(--cyan);
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: 0.3px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+      font-size: 14px;
+    }
+
+    .nav-links a:hover {
+      color: var(--cyan);
+    }
+
+    .hero {
+      padding: 85px 0 75px;
+      background:
+        radial-gradient(ellipse at top right, #153b56 0%, transparent 55%),
+        var(--navy);
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(36px, 5vw, 58px);
+      line-height: 1.15;
+      max-width: 850px;
+      margin-bottom: 22px;
+    }
+
+    h1 span,
+    h2 span {
+      color: var(--cyan);
+    }
+
+    .hero p {
+      color: var(--muted);
+      max-width: 730px;
+      font-size: 17px;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 21px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 14px;
+      transition: 0.2s;
+    }
+
+    .btn-primary {
+      background: var(--cyan);
+      color: var(--navy);
+    }
+
+    .btn-primary:hover {
+      background: var(--white);
+    }
+
+    .btn-outline {
+      border: 1px solid var(--cyan);
+      color: var(--cyan);
+    }
+
+    .btn-outline:hover {
+      background: rgba(121, 210, 245, 0.1);
+    }
+
+    section {
+      padding: 65px 0;
+    }
+
+    .section-heading {
+      max-width: 750px;
+      margin-bottom: 32px;
+    }
+
+    h2 {
+      font-size: clamp(28px, 4vw, 40px);
+      line-height: 1.25;
+      margin-bottom: 15px;
+    }
+
+    .section-heading p,
+    .muted {
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--navy-light);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 25px;
+    }
+
+    .card .number {
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .card h3 {
+      color: var(--cyan);
+      font-size: 20px;
+      margin: 12px 0;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .text-link {
+      display: inline-block;
+      color: var(--cyan);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .text-link:hover {
+      color: var(--gold);
+    }
+
+    .process {
+      background: #0A2035;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .step {
+      border-left: 3px solid var(--gold);
+      padding: 8px 18px;
+    }
+
+    .step h3 {
+      color: var(--cyan);
+      margin-bottom: 8px;
+    }
+
+    .step p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .enquiry-layout {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 35px;
+      align-items: start;
+    }
+
+    .contact-panel {
+      background: #0A2035;
+      padding: 28px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+
+    .contact-panel h3 {
+      color: var(--cyan);
+      margin-bottom: 14px;
+    }
+
+    .contact-panel p {
+      color: var(--muted);
+      margin-bottom: 14px;
+      overflow-wrap: anywhere;
+    }
+
+    form {
+      display: grid;
+      gap: 15px;
+      background: var(--navy-light);
+      border: 1px solid var(--border);
+      padding: 28px;
+      border-radius: 12px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    label {
+      display: block;
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #35516A;
+      background: #07182B;
+      color: white;
+      font: inherit;
+      font-size: 14px;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: 1px solid var(--cyan);
+      border-color: var(--cyan);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 105px;
+    }
+
+    .form-note {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    button {
+      border: 0;
+      cursor: pointer;
+      font: inherit;
+      text-align: center;
+    }
+
+    .disclaimer {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 16px;
+    }
+
+    footer {
+      padding: 30px 0;
+      border-top: 1px solid var(--border);
+      background: #061321;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    footer p {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 8px;
+    }
+
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 10;
+      background: #25D366;
+      color: #062314;
+      padding: 13px 17px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: 800;
+      box-shadow: 0 5px 20px #0005;
+    }
+
+    @media (max-width: 800px) {
+      .grid,
+      .steps {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .enquiry-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .grid,
+      .steps,
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 60px 0;
+      }
+
+      .nav {
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        gap: 12px;
+      }
+
+      form,
+      .card,
+      .contact-panel {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html">SAROVARAM</a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#services">Services</a>
+        <a href="commercial-property.html">Commercial Property</a>
+        <a href="#listings">Business Listings</a>
+        <a href="#enquiry">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow">Business Opportunities · Capital · Growth</div>
+
+        <h1>Buy, Sell & Explore <span>Business Opportunities</span></h1>
+
+        <p>
+          Connect with potential business buyers, sellers and investors.
+          Sarovaram Corporate Solutions helps organise business enquiries
+          and facilitates discussions around suitable acquisition and sale opportunities.
+        </p>
+
+        <div class="buttons">
+          <a class="btn btn-primary" href="#enquiry">List Your Business ↗</a>
+          <a class="btn btn-outline" href="#listings">Explore Opportunities</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="listings">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Business Listings</div>
+          <h2>Find Your Next <span>Business Opportunity</span></h2>
+          <p>
+            Looking to acquire a business or find a buyer for your existing
+            business? Submit your requirement so our team can understand
+            your objectives and discuss possible next steps.
+          </p>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <div class="number">01 · BUY</div>
+            <h3>Businesses for Sale</h3>
+            <p>
+              Share your preferred industry, investment range, location
+              and acquisition requirements.
+            </p>
+            <a class="text-link" href="#enquiry"
+               onclick="setInterest('I am looking to buy a business')">
+              Submit Buyer Enquiry ↗
+            </a>
+          </article>
+
+          <article class="card">
+            <div class="number">02 · SELL</div>
+            <h3>List Your Business</h3>
+            <p>
+              Business owners can share their business profile, location,
+              asking price and preferred sale timeline.
+            </p>
+            <a class="text-link" href="#enquiry"
+               onclick="setInterest('I want to sell or list my business')">
+              Submit Seller Enquiry ↗
+            </a>
+          </article>
+
+          <article class="card">
+            <div class="number">03 · INVEST</div>
+            <h3>Investment Opportunities</h3>
+            <p>
+              Tell us about your investment preferences, target sectors
+              and indicative investment capacity.
+            </p>
+            <a class="text-link" href="#enquiry"
+               onclick="setInterest('I am exploring business investment opportunities')">
+              Discuss Investment ↗
+            </a>
+          </article>
+        </div>
+
+        <p class="disclaimer">
+          Business listings and opportunities are subject to verification,
+          availability and the relevant parties' approval. No transaction
+          or investment outcome is guaranteed.
+        </p>
+      </div>
+    </section>
+
+    <section class="process">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Our Approach</div>
+          <h2>A Structured <span>Enquiry Process</span></h2>
+          <p>
+            We begin by understanding your requirements and then discuss
+            the appropriate next steps with you.
+          </p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <h3>01. Share Details</h3>
+            <p>
+              Tell us whether you want to buy, sell or explore an investment
+              opportunity.
+            </p>
+          </div>
+
+          <div class="step">
+            <h3>02. Initial Discussion</h3>
+            <p>
+              We review the information provided and discuss your objectives
+              and requirements.
+            </p>
+          </div>
+
+          <div class="step">
+            <h3>03. Next Steps</h3>
+            <p>
+              Where appropriate, we discuss further information, verification
+              and possible introductions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="enquiry">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Get in Touch</div>
+          <h2>Submit a Business <span>Enquiry</span></h2>
+          <p>
+            Complete the form with your details. It will open WhatsApp
+            with your enquiry message for you to review and send.
+          </p>
+        </div>
+
+        <div class="enquiry-layout">
+          <div class="contact-panel">
+            <h3>Let's Discuss Your Requirement</h3>
+            <p>
+              Whether you are a business owner, prospective buyer or investor,
+              share your requirements with our team.
+            </p>
+            <p><strong>Phone / WhatsApp:</strong><br>
+              <a href="https://wa.me/919447907637" target="_blank" rel="noopener">
+                +91 94479 07637
+              </a>
+            </p>
+            <p><strong>Email:</strong><br>
+              <a href="mailto:Ceoaloomacorp@gmail.com">
+                Ceoaloomacorp@gmail.com
+              </a>
+            </p>
+            <p><strong>Office:</strong><br>
+              Greenland Heights, 4th Floor, KRA Business Centre,
+              Near NH Bypass Junction, Nethaji Road, Palarivattom,
+              Kochi, Kerala – 682025
+            </p>
+          </div>
+
+          <form id="businessForm">
+            <div class="form-row">
+              <div>
+                <label for="name">Full Name *</label>
+                <input id="name" name="name" type="text" required
+                       autocomplete="name" placeholder="Your full name">
+              </div>
+
+              <div>
+                <label for="phone">Phone Number *</label>
+                <input id="phone" name="phone" type="tel" required
+                       autocomplete="tel" placeholder="Your contact number">
+              </div>
+            </div>
+
+            <div>
+              <label for="interest">I am interested in *</label>
+              <select id="interest" name="interest" required>
+                <option value="">Select an option</option>
+                <option value="I am looking to buy a business">Buying a business</option>
+                <option value="I want to sell or list my business">Selling / listing my business</option>
+                <option value="I am exploring business investment opportunities">Investment opportunities</option>
+                <option value="I want to discuss a business partnership">Business partnership</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div>
+                <label for="industry">Industry / Business Type</label>
+                <input id="industry" name="industry" type="text"
+                       placeholder="e.g. Retail, Manufacturing">
+              </div>
+
+              <div>
+                <label for="location">Preferred Location</label>
+                <input id="location" name="location" type="text"
+                       placeholder="City / District / State">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div>
+                <label for="budget">Indicative Budget / Asking Price</label>
+                <input id="budget" name="budget" type="text"
+                       placeholder="e.g. ₹50 lakh">
+              </div>
+
+              <div>
+                <label for="timeline">Expected Timeline</label>
+                <select id="timeline" name="timeline">
+                  <option value="">Select timeline</option>
+                  <option>Immediately</option>
+                  <option>Within 1–3 months</option>
+                  <option>Within 3–6 months</option>
+                  <option>Exploring for now</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="details">Additional Details</label>
+              <textarea id="details" name="details"
+                        placeholder="Describe your business or requirements"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              Continue to WhatsApp ↗
+            </button>
+
+            <p class="form-note">
+              This form prepares a WhatsApp message. It does not publish
+              your listing automatically. Review and send the message yourself.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div>
+        <a class="brand" href="index.html">SAROVARAM CORPORATE SOLUTIONS</a>
+        <p>Capital. Property. Growth.</p>
+      </div>
+
+      <div>
+        <p>
+          Sarovaram Corporate Solutions is a business brand operated by
+          Alooma Holdings Private Limited.
+        </p>
+        <p>Legal entity: Alooma Holdings Private Limited</p>
+        <p>CIN: U67100KL2020PTC065780</p>
+        <p>
+          All engagements are undertaken by the relevant legal entity or
+          authorised service provider identified in the applicable proposal,
+          engagement letter, invoice or agreement.
+        </p>
+        <p>© <span id="year"></span> Sarovaram Corporate Solutions. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/919447907637"
+     target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    WhatsApp ↗
+  </a>
+
+  <script>
+    function setInterest(value) {
+      document.getElementById("interest").value = value;
+    }
+
+    document.getElementById("businessForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const interest = document.getElementById("interest").value;
+      const industry = document.getElementById("industry").value.trim();
+      const location = document.getElementById("location").value.trim();
+      const budget = document.getElementById("budget").value.trim();
+      const timeline = document.getElementById("timeline").value;
+      const details = document.getElementById("details").value.trim();
+
+      if (!name || !phone || !interest) {
+        alert("Please complete all required fields.");
+        return;
+      }
+
+      const message =
+        "BUSINESS ENQUIRY - SAROVARAM CORPORATE SOLUTIONS\n\n" +
+        "Name: " + name + "\n" +
+        "Phone: " + phone + "\n" +
+        "Enquiry: " + interest + "\n" +
+        "Industry / Business Type: " + (industry || "Not specified") + "\n" +
+        "Preferred Location: " + (location || "Not specified") + "\n" +
+        "Budget / Asking Price: " + (budget || "Not specified") + "\n" +
+        "Timeline: " + (timeline || "Not specified") + "\n" +
+        "Additional Details: " + (details || "Not specified");
+
+      const whatsappURL =
+        "https://wa.me/919447907637?text=" + encodeURIComponent(message);
+
+      window.open(whatsappURL, "_blank", "noopener");
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
