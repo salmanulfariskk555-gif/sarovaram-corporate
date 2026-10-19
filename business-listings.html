@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore business buying and selling opportunities with Sarovaram Corporate Solutions. Submit your business listing or enquire about acquisition opportunities.">
+  <meta name="description" content="Explore business buying and selling opportunities with Sarovaram Corporate Solutions.">
   <title>Business Listings | Sarovaram Corporate Solutions</title>
 
   <style>
@@ -55,25 +56,71 @@
       align-items: center;
       justify-content: space-between;
       gap: 20px;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
     }
 
-    .brand {
+    .brand-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border: 1.5px solid var(--cyan);
       color: var(--cyan);
-      font-size: 20px;
+      display: grid;
+      place-items: center;
+      font-size: 23px;
+      font-weight: 500;
+      flex: 0 0 auto;
+    }
+
+    .brand-copy {
+      min-width: 0;
+    }
+
+    .brand-name {
+      display: block;
+      color: var(--white);
+      font-size: 17px;
+      line-height: 1.2;
       font-weight: 800;
-      letter-spacing: 0.3px;
+      letter-spacing: 1.2px;
+    }
+
+    .brand-tagline {
+      display: block;
+      color: var(--muted);
+      font-size: 9px;
+      letter-spacing: 1px;
+      line-height: 1.5;
+      margin-top: 4px;
     }
 
     .nav-links {
       display: flex;
-      gap: 22px;
-      flex-wrap: wrap;
-      font-size: 14px;
+      align-items: center;
+      gap: 18px;
+      font-size: 13px;
     }
 
     .nav-links a:hover {
       color: var(--cyan);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: transparent;
+      color: var(--cyan);
+      border: 1px solid var(--cyan);
+      border-radius: 5px;
+      padding: 9px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      white-space: nowrap;
     }
 
     .hero {
@@ -207,6 +254,35 @@
       color: var(--gold);
     }
 
+    .listing-meta {
+      color: var(--muted);
+      font-size: 13px;
+      margin: 8px 0 14px;
+    }
+
+    .listing-meta strong {
+      color: var(--white);
+    }
+
+    .demo-tag {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 4px;
+      background: rgba(215, 182, 117, 0.14);
+      border: 1px solid rgba(215, 182, 117, 0.5);
+      color: var(--gold);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      margin-top: 10px;
+    }
+
+    .disclaimer {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 16px;
+    }
+
     .process {
       background: #0A2035;
     }
@@ -316,12 +392,6 @@
       text-align: center;
     }
 
-    .disclaimer {
-      font-size: 12px;
-      color: var(--muted);
-      margin-top: 16px;
-    }
-
     footer {
       padding: 30px 0;
       border-top: 1px solid var(--border);
@@ -341,6 +411,13 @@
       margin-top: 8px;
     }
 
+    .footer-brand {
+      color: var(--cyan);
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: 0.3px;
+    }
+
     .whatsapp {
       position: fixed;
       right: 20px;
@@ -355,7 +432,74 @@
       box-shadow: 0 5px 20px #0005;
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 1000px) {
+      .nav-links {
+        gap: 12px;
+        font-size: 12px;
+      }
+
+      .brand-tagline {
+        font-size: 8px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      header {
+        padding: 13px 0;
+      }
+
+      .nav {
+        position: relative;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .brand-mark {
+        width: 37px;
+        height: 37px;
+        font-size: 20px;
+      }
+
+      .brand-name {
+        font-size: 15px;
+      }
+
+      .brand-tagline {
+        font-size: 7px;
+        letter-spacing: 0.65px;
+      }
+
+      .menu-toggle {
+        display: block;
+        margin-left: auto;
+      }
+
+      .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: #0A2035;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 7px 0;
+        margin-top: 8px;
+        font-size: 14px;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .nav-links a {
+        padding: 10px 15px;
+      }
+
+      .nav-links a:hover {
+        background: rgba(121, 210, 245, 0.08);
+      }
+
       .grid,
       .steps {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -377,18 +521,19 @@
         padding: 60px 0;
       }
 
-      .nav {
-        align-items: flex-start;
-      }
-
-      .nav-links {
-        gap: 12px;
-      }
-
       form,
       .card,
       .contact-panel {
         padding: 20px;
+      }
+
+      .brand-tagline {
+        max-width: 235px;
+      }
+
+      .whatsapp {
+        right: 12px;
+        bottom: 12px;
       }
     }
   </style>
@@ -398,13 +543,31 @@
 
   <header>
     <div class="container nav">
-      <a class="brand" href="index.html">SAROVARAM</a>
+      <a class="brand-wrap" href="index.html" aria-label="Sarovaram Corporate Solutions home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span class="brand-copy">
+          <span class="brand-name">SAROVARAM</span>
+          <span class="brand-tagline">CORPORATE SOLUTIONS · CAPITAL · PROPERTY · GROWTH</span>
+        </span>
+      </a>
 
-      <nav class="nav-links" aria-label="Main navigation">
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mainMenu"
+        onclick="toggleMenu()">
+        Menu ☰
+      </button>
+
+      <nav class="nav-links" id="mainMenu" aria-label="Main navigation">
         <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#divisions">Our Divisions</a>
         <a href="index.html#services">Services</a>
         <a href="commercial-property.html">Commercial Property</a>
         <a href="#listings">Business Listings</a>
+        <a href="index.html#process">Our Process</a>
         <a href="#enquiry">Contact</a>
       </nav>
     </div>
@@ -443,50 +606,121 @@
         </div>
 
         <div class="grid">
-          <article class="card">
-            <div class="number">01 · BUY</div>
-            <h3>Businesses for Sale</h3>
+
+          <article class="card listing-card">
+            <div class="number">DEMO LISTING 01 · RETAIL</div>
+            <h3>Sample Supermarket Business</h3>
+            <div class="listing-meta">
+              <strong>Location:</strong> Kochi, Kerala<br>
+              <strong>Opportunity:</strong> Business for Sale
+            </div>
             <p>
-              Share your preferred industry, investment range, location
-              and acquisition requirements.
+              Illustrative listing for a running neighbourhood supermarket.
+              Financials, lease terms and operational details would need to be verified.
             </p>
+            <span class="demo-tag">DEMO — NOT A VERIFIED LISTING</span><br><br>
             <a class="text-link" href="#enquiry"
-               onclick="setInterest('I am looking to buy a business')">
-              Submit Buyer Enquiry ↗
+               onclick="setInterest('I am interested in Demo Listing 01: Sample Supermarket Business')">
+              Enquire About This Listing ↗
             </a>
           </article>
 
-          <article class="card">
-            <div class="number">02 · SELL</div>
-            <h3>List Your Business</h3>
+          <article class="card listing-card">
+            <div class="number">DEMO LISTING 02 · FOOD & BEVERAGE</div>
+            <h3>Sample Café & Bakery</h3>
+            <div class="listing-meta">
+              <strong>Location:</strong> Ernakulam, Kerala<br>
+              <strong>Opportunity:</strong> Business for Sale
+            </div>
             <p>
-              Business owners can share their business profile, location,
-              asking price and preferred sale timeline.
+              Illustrative café and bakery concept with dine-in and takeaway potential.
+              Brand, sales and equipment details are examples only.
             </p>
+            <span class="demo-tag">DEMO — NOT A VERIFIED LISTING</span><br><br>
             <a class="text-link" href="#enquiry"
-               onclick="setInterest('I want to sell or list my business')">
-              Submit Seller Enquiry ↗
+               onclick="setInterest('I am interested in Demo Listing 02: Sample Café & Bakery')">
+              Enquire About This Listing ↗
             </a>
           </article>
 
-          <article class="card">
-            <div class="number">03 · INVEST</div>
-            <h3>Investment Opportunities</h3>
+          <article class="card listing-card">
+            <div class="number">DEMO LISTING 03 · MANUFACTURING</div>
+            <h3>Sample Packaging Unit</h3>
+            <div class="listing-meta">
+              <strong>Location:</strong> Malappuram, Kerala<br>
+              <strong>Opportunity:</strong> Acquisition Opportunity
+            </div>
             <p>
-              Tell us about your investment preferences, target sectors
-              and indicative investment capacity.
+              Illustrative small-scale packaging unit for a buyer exploring manufacturing.
+              Capacity, licences and assets would require due diligence.
             </p>
+            <span class="demo-tag">DEMO — NOT A VERIFIED LISTING</span><br><br>
             <a class="text-link" href="#enquiry"
-               onclick="setInterest('I am exploring business investment opportunities')">
-              Discuss Investment ↗
+               onclick="setInterest('I am interested in Demo Listing 03: Sample Packaging Unit')">
+              Enquire About This Listing ↗
             </a>
           </article>
+
+          <article class="card listing-card">
+            <div class="number">DEMO LISTING 04 · HEALTHCARE</div>
+            <h3>Sample Medical Store</h3>
+            <div class="listing-meta">
+              <strong>Location:</strong> Thrissur, Kerala<br>
+              <strong>Opportunity:</strong> Business Transfer Enquiry
+            </div>
+            <p>
+              Illustrative pharmacy business transfer enquiry. Any real transaction
+              would depend on licence status, records and applicable approvals.
+            </p>
+            <span class="demo-tag">DEMO — NOT A VERIFIED LISTING</span><br><br>
+            <a class="text-link" href="#enquiry"
+               onclick="setInterest('I am interested in Demo Listing 04: Sample Medical Store')">
+              Enquire About This Listing ↗
+            </a>
+          </article>
+
+          <article class="card listing-card">
+            <div class="number">DEMO LISTING 05 · SERVICES</div>
+            <h3>Sample Digital Marketing Agency</h3>
+            <div class="listing-meta">
+              <strong>Location:</strong> Kozhikode, Kerala<br>
+              <strong>Opportunity:</strong> Acquisition / Partnership
+            </div>
+            <p>
+              Illustrative agency opportunity for buyers interested in client-service
+              businesses. Client contracts and performance are not represented as verified.
+            </p>
+            <span class="demo-tag">DEMO — NOT A VERIFIED LISTING</span><br><br>
+            <a class="text-link" href="#enquiry"
+               onclick="setInterest('I am interested in Demo Listing 05: Sample Digital Marketing Agency')">
+              Enquire About This Listing ↗
+            </a>
+          </article>
+
+          <article class="card listing-card">
+            <div class="number">DEMO LISTING 06 · LOGISTICS</div>
+            <h3>Sample Logistics & Distribution Business</h3>
+            <div class="listing-meta">
+              <strong>Location:</strong> Palakkad, Kerala<br>
+              <strong>Opportunity:</strong> Business for Sale
+            </div>
+            <p>
+              Illustrative distribution and logistics business profile.
+              Fleet, warehouse, permits and financial details would need independent checks.
+            </p>
+            <span class="demo-tag">DEMO — NOT A VERIFIED LISTING</span><br><br>
+            <a class="text-link" href="#enquiry"
+               onclick="setInterest('I am interested in Demo Listing 06: Sample Logistics & Distribution Business')">
+              Enquire About This Listing ↗
+            </a>
+          </article>
+
         </div>
 
         <p class="disclaimer">
-          Business listings and opportunities are subject to verification,
-          availability and the relevant parties' approval. No transaction
-          or investment outcome is guaranteed.
+          These are illustrative demo listings, not verified businesses currently offered for sale.
+          Real listings must be reviewed and verified before publication. No transaction or investment
+          outcome is guaranteed.
         </p>
       </div>
     </section>
@@ -548,17 +782,23 @@
               Whether you are a business owner, prospective buyer or investor,
               share your requirements with our team.
             </p>
-            <p><strong>Phone / WhatsApp:</strong><br>
+
+            <p>
+              <strong>Phone / WhatsApp:</strong><br>
               <a href="https://wa.me/919447907637" target="_blank" rel="noopener">
                 +91 94479 07637
               </a>
             </p>
-            <p><strong>Email:</strong><br>
+
+            <p>
+              <strong>Email:</strong><br>
               <a href="mailto:Ceoaloomacorp@gmail.com">
                 Ceoaloomacorp@gmail.com
               </a>
             </p>
-            <p><strong>Office:</strong><br>
+
+            <p>
+              <strong>Office:</strong><br>
               Greenland Heights, 4th Floor, KRA Business Centre,
               Near NH Bypass Junction, Nethaji Road, Palarivattom,
               Kochi, Kerala – 682025
@@ -647,7 +887,7 @@
   <footer>
     <div class="container footer-content">
       <div>
-        <a class="brand" href="index.html">SAROVARAM CORPORATE SOLUTIONS</a>
+        <a class="footer-brand" href="index.html">SAROVARAM CORPORATE SOLUTIONS</a>
         <p>Capital. Property. Growth.</p>
       </div>
 
@@ -674,8 +914,37 @@
   </a>
 
   <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mainMenu");
+      const button = document.querySelector(".menu-toggle");
+      const isOpen = menu.classList.toggle("open");
+
+      button.setAttribute("aria-expanded", String(isOpen));
+    }
+
+    document.querySelectorAll("#mainMenu a").forEach(function(link) {
+      link.addEventListener("click", function() {
+        document.getElementById("mainMenu").classList.remove("open");
+        document.querySelector(".menu-toggle").setAttribute("aria-expanded", "false");
+      });
+    });
+
     function setInterest(value) {
-      document.getElementById("interest").value = value;
+      const interestField = document.getElementById("interest");
+
+      // Add a custom listing enquiry option if it is not already present.
+      let option = Array.from(interestField.options).find(function(item) {
+        return item.value === value;
+      });
+
+      if (!option) {
+        option = document.createElement("option");
+        option.value = value;
+        option.textContent = value;
+        interestField.appendChild(option);
+      }
+
+      interestField.value = value;
     }
 
     document.getElementById("businessForm").addEventListener("submit", function(event) {
