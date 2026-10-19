@@ -2,642 +2,654 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Commercial Property Buy, Sell & Lease | Sarovaram Corporate Solutions</title>
+<meta name="description" content="Commercial property support for buyers, sellers, landlords, tenants and investors.">
+<meta name="theme-color" content="#07182B">
 
-  <title>Commercial Property Buy, Sell & Lease | Sarovaram Corporate Solutions</title>
+<style>
+:root {
+  --navy: #07182B;
+  --navy2: #0D233B;
+  --panel: #102944;
+  --cyan: #79D2F5;
+  --gold: #D7B675;
+  --white: #FFFFFF;
+  --muted: #C1CCDA;
+  --line: rgba(255,255,255,.14);
+}
 
-  <meta name="description" content="Commercial property buying, selling, leasing and investment enquiry support from Sarovaram Corporate Solutions in Kochi, Kerala.">
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 
-  <meta name="theme-color" content="#07182B">
+body {
+  margin: 0;
+  background: var(--navy);
+  color: var(--white);
+  font: 16px/1.65 Arial, Helvetica, sans-serif;
+}
 
-  <style>
-    :root {
-      --navy: #07182B;
-      --navy-light: #0D233B;
-      --panel: #102944;
-      --cyan: #79D2F5;
-      --gold: #D7B675;
-      --white: #FFFFFF;
-      --muted: #C1CCDA;
-      --line: rgba(255,255,255,0.14);
-    }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-    * {
-      box-sizing: border-box;
-    }
+.wrap {
+  width: min(1100px, calc(100% - 36px));
+  margin: auto;
+}
 
-    html {
-      scroll-behavior: smooth;
-    }
+/* HEADER - MATCHING HOME PAGE STYLE */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(7,20,38,.96);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(14px);
+}
 
-    body {
-      margin: 0;
-      background: var(--navy);
-      color: var(--white);
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.65;
-    }
+.nav {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+.brand {
+  font-weight: 900;
+  letter-spacing: .03em;
+  font-size: 1.03rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
-    .wrap {
-      width: min(1100px, calc(100% - 36px));
-      margin: auto;
-    }
+.brand-mark {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--cyan);
+  border-radius: 10px;
+  color: var(--cyan);
+  font-weight: 900;
+}
 
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background: rgba(7,24,43,0.97);
-      border-bottom: 1px solid var(--line);
-    }
+.brand small {
+  display: block;
+  color: #B8C4D5;
+  font-size: .72rem;
+  font-weight: 500;
+  letter-spacing: .12em;
+}
 
-    .nav {
-      min-height: 76px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-      padding: 12px 0;
-    }
+.navlinks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: .88rem;
+  color: #E0E7F0;
+}
 
-    .brand {
-      font-size: 1.15rem;
-      font-weight: 900;
-      letter-spacing: 2px;
-    }
+.navlinks a:hover { color: var(--cyan); }
 
-    .brand small {
-      display: block;
-      color: var(--muted);
-      font-size: 0.72rem;
-      font-weight: 500;
-      letter-spacing: 2px;
-    }
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: 1px solid var(--line);
+  color: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
 
-    .navlinks {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-      font-size: 0.92rem;
-    }
+.nav-cta {
+  white-space: nowrap;
+}
 
-    .navlinks a:hover {
-      color: var(--cyan);
-    }
+.hero {
+  padding: 76px 0 60px;
+  background:
+    radial-gradient(ellipse at 80% 20%, rgba(121,210,245,.15), transparent 45%),
+    linear-gradient(135deg, var(--navy), var(--navy2));
+}
 
-    .hero {
-      padding: 76px 0 60px;
-      background:
-        radial-gradient(
-          ellipse at 80% 20%,
-          rgba(121,210,245,0.17),
-          transparent 45%
-        ),
-        linear-gradient(135deg, var(--navy), var(--navy-light));
-    }
+.eyebrow {
+  color: var(--cyan);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-size: .78rem;
+}
 
-    .eyebrow {
-      color: var(--cyan);
-      font-size: 0.8rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
+h1 {
+  font-size: clamp(2.4rem, 5vw, 4.3rem);
+  line-height: 1.08;
+  margin: 12px 0 20px;
+  max-width: 850px;
+}
 
-    h1 {
-      max-width: 850px;
-      margin: 12px 0 20px;
-      font-size: clamp(2.4rem, 5vw, 4.3rem);
-      line-height: 1.08;
-    }
+h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  line-height: 1.2;
+}
 
-    h2 {
-      font-size: clamp(1.7rem, 3vw, 2.4rem);
-      line-height: 1.2;
-    }
+h3 { line-height: 1.3; }
+p { color: var(--muted); }
 
-    p {
-      color: var(--muted);
-    }
+.lead {
+  font-size: 1.1rem;
+  max-width: 800px;
+}
 
-    .lead {
-      max-width: 800px;
-      font-size: 1.1rem;
-    }
+.btn {
+  display: inline-block;
+  padding: 12px 18px;
+  border: 1px solid var(--cyan);
+  border-radius: 8px;
+  background: var(--cyan);
+  color: var(--navy);
+  font-weight: 800;
+  margin: 12px 8px 0 0;
+  cursor: pointer;
+  font: inherit;
+  text-align: center;
+}
 
-    .btn {
-      display: inline-block;
-      margin: 12px 8px 0 0;
-      padding: 13px 20px;
-      border: 1px solid var(--cyan);
-      border-radius: 8px;
-      background: var(--cyan);
-      color: var(--navy);
-      font-weight: 800;
-      cursor: pointer;
-      font-size: 1rem;
-    }
+.btn:hover { background: #A7E5FA; }
 
-    .btn:hover {
-      background: #A7E5FA;
-    }
+.btn.alt {
+  background: transparent;
+  color: white;
+}
 
-    .btn.alt {
-      background: transparent;
-      color: var(--white);
-    }
+.section { padding: 60px 0; }
 
-    .section {
-      padding: 60px 0;
-    }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 22px;
-    }
+.card {
+  padding: 25px;
+  border: 1px solid var(--line);
+  background: linear-gradient(145deg, #102944, #0B1D31);
+  border-radius: 15px;
+}
 
-    .card {
-      padding: 25px;
-      border: 1px solid var(--line);
-      border-radius: 15px;
-      background: linear-gradient(145deg, #102944, #0B1D31);
-    }
+.card h2, .card h3 { color: white; }
+.card li { margin-bottom: 8px; color: var(--muted); }
+.gold { color: var(--gold); }
 
-    .card h2,
-    .card h3 {
-      color: var(--white);
-    }
+.field {
+  display: grid;
+  gap: 7px;
+  margin: 15px 0;
+}
 
-    .card li {
-      margin-bottom: 8px;
-      color: var(--muted);
-    }
+.field label { font-weight: 700; }
 
-    .gold {
-      color: var(--gold);
-    }
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--navy);
+  color: white;
+  font: inherit;
+}
 
-    .field {
-      display: grid;
-      gap: 7px;
-      margin: 15px 0;
-    }
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: 2px solid var(--cyan);
+}
 
-    .field label {
-      font-weight: 700;
-    }
+.field textarea {
+  min-height: 110px;
+  resize: vertical;
+}
 
-    .field input,
-    .field select,
-    .field textarea {
-      width: 100%;
-      padding: 13px;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: var(--navy);
-      color: var(--white);
-      font: inherit;
-    }
+.contact {
+  background: #050F1C;
+  padding: 35px 0;
+}
 
-    .field input:focus,
-    .field select:focus,
-    .field textarea:focus {
-      outline: 2px solid var(--cyan);
-    }
+footer {
+  border-top: 1px solid var(--line);
+  padding: 28px 0;
+}
 
-    .field textarea {
-      min-height: 110px;
-      resize: vertical;
-    }
+footer p { font-size: .9rem; }
 
-    .contact {
-      padding: 35px 0;
-      background: #050F1C;
-    }
+.floating {
+  position: fixed;
+  right: 18px;
+  bottom: 22px;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #25D366;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 8px 26px #0008;
+  z-index: 30;
+}
 
-    footer {
-      padding: 28px 0;
-      border-top: 1px solid var(--line);
-    }
+.floating svg {
+  width: 31px;
+  height: 31px;
+  fill: white;
+}
 
-    footer p {
-      font-size: 0.9rem;
-    }
+/* MOBILE MENU */
+@media (max-width: 760px) {
+  .wrap {
+    width: min(1100px, calc(100% - 30px));
+  }
 
-    .floating {
-      position: fixed;
-      right: 18px;
-      bottom: 22px;
-      z-index: 30;
-      display: grid;
-      place-items: center;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      background: #25D366;
-      box-shadow: 0 8px 26px #0008;
-    }
+  .nav {
+    min-height: 76px;
+    gap: 10px;
+  }
 
-    .floating svg {
-      width: 32px;
-      height: 32px;
-      fill: white;
-    }
+  .brand {
+    font-size: .96rem;
+    gap: 9px;
+    max-width: calc(100% - 95px);
+  }
 
-    @media (max-width: 720px) {
-      .nav {
-        align-items: flex-start;
-        flex-direction: column;
-      }
+  .brand-mark {
+    width: 36px;
+    height: 36px;
+    flex-basis: 36px;
+  }
 
-      .navlinks {
-        gap: 12px;
-        font-size: 0.85rem;
-      }
+  .brand small {
+    font-size: .58rem;
+    line-height: 1.8;
+    letter-spacing: .07em;
+  }
 
-      .grid {
-        grid-template-columns: 1fr;
-      }
+  .menu-toggle {
+    display: block;
+    flex: 0 0 auto;
+  }
 
-      .hero {
-        padding: 52px 0 40px;
-      }
+  .navlinks {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #07182B;
+    border-bottom: 1px solid var(--line);
+    padding: 12px 20px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
 
-      .section {
-        padding: 42px 0;
-      }
-    }
-  </style>
+  .navlinks.open { display: flex; }
+
+  .navlinks a {
+    padding: 11px 0;
+    border-bottom: 1px solid rgba(255,255,255,.07);
+  }
+
+  .navlinks a:last-child { border-bottom: 0; }
+  .nav-cta { display: none; }
+  .grid { grid-template-columns: 1fr; }
+  .hero { padding: 52px 0 40px; }
+  .section { padding: 42px 0; }
+}
+</style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <div class="wrap nav">
+<header class="header">
+  <div class="wrap nav">
 
-      <a class="brand" href="index.html">
+    <a class="brand" href="index.html" aria-label="Sarovaram Home">
+      <span class="brand-mark">S</span>
+      <span>
         SAROVARAM
         <small>CORPORATE SOLUTIONS · CAPITAL · PROPERTY · GROWTH</small>
+      </span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-expanded="false"
+      aria-controls="navLinks"
+      type="button">
+      Menu ☰
+    </button>
+
+    <nav class="navlinks" id="navLinks" aria-label="Main navigation">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#divisions">Our Divisions</a>
+      <a href="index.html#services">Services</a>
+      <a href="commercial-property.html">Commercial Property</a>
+      <a href="business-listings.html">Business Listings</a>
+      <a href="index.html#process">Our Process</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <a class="btn nav-cta" href="#propertyForm">
+      Discuss Your Requirement ↗
+    </a>
+
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow">Sarovaram Capital Advisors</span>
+
+      <h1>Commercial Property: Buy, Sell &amp; Lease</h1>
+
+      <p class="lead">
+        Support for commercial property sourcing, sale, leasing and
+        investment decisions. Share your location, property type,
+        budget or expected sale value, and timeline to start a conversation.
+      </p>
+
+      <a class="btn" href="#propertyForm">
+        Discuss Your Requirement ↗
       </a>
 
-      <nav class="navlinks">
-        <a href="index.html">Home</a>
-        <a href="commercial-property.html">Commercial Property</a>
-        <a href="business-listings.html">Business Listings</a>
-        <a href="index.html#contact">Contact</a>
-      </nav>
-
+      <a class="btn alt" href="#property-services">
+        Explore Our Services
+      </a>
     </div>
-  </header>
+  </section>
 
-  <main>
-
-    <!-- HERO SECTION -->
-    <section class="hero">
-      <div class="wrap">
-
-        <span class="eyebrow">Sarovaram Capital Advisors</span>
-
-        <h1>Commercial Property: Buy, Sell &amp; Lease</h1>
-
-        <p class="lead">
-          Supporting businesses, property owners and investors with
-          commercial property sourcing, sale, leasing and investment
-          decisions. Share your property type, preferred location,
-          approximate budget and timeline to begin an enquiry.
-        </p>
-
-        <a class="btn" href="#property-enquiry">
-          Discuss Your Requirement ↗
-        </a>
-
-        <a class="btn alt" href="#services">
-          Explore Our Services
-        </a>
-
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="section" id="services">
-      <div class="wrap">
-
-        <span class="eyebrow">Property Solutions</span>
-        <h2>Commercial Property Services</h2>
-
-        <p class="lead">
-          Structured support to help you explore commercial property
-          opportunities and coordinate the next steps.
-        </p>
-
-        <div class="grid">
-
-          <article class="card">
-            <h3 class="gold">01 · Property Purchase</h3>
-            <p>
-              Share your requirement to explore commercial buildings,
-              offices, retail spaces, warehouses or land for business use.
-            </p>
-            <h4>Ideal for</h4>
-            <p>
-              Business owners, investors, developers and companies
-              looking for commercial property.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3 class="gold">02 · Property Sale</h3>
-            <p>
-              Present your commercial property details for an initial
-              discussion about potential buyers and transaction needs.
-            </p>
-            <h4>Ideal for</h4>
-            <p>
-              Property owners, landlords, developers and investors
-              considering a sale.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3 class="gold">03 · Leasing</h3>
-            <p>
-              Enquire about commercial spaces for lease or share
-              details of a property available for rental.
-            </p>
-            <h4>Ideal for</h4>
-            <p>
-              Tenants, landlords, retailers and businesses seeking
-              suitable commercial premises.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3 class="gold">04 · Investment Opportunities</h3>
-            <p>
-              Discuss commercial property investment requirements,
-              preferred locations and broad investment objectives.
-            </p>
-            <h4>Ideal for</h4>
-            <p>
-              Investors and businesses evaluating commercial
-              property opportunities.
-            </p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ENQUIRY FORM -->
-    <section class="section" id="property-enquiry">
-      <div class="wrap grid">
-
-        <article class="card">
-          <span class="eyebrow">Start a Conversation</span>
-          <h2>Discuss Your Property Requirement</h2>
-
-          <p>
-            Tell us what you are looking for. Our team can review the
-            basic details and discuss possible next steps.
-          </p>
-
-          <ul>
-            <li>Initial requirement discussion</li>
-            <li>Property type and location details</li>
-            <li>Budget or expected sale value range</li>
-            <li>Timeline and next-step coordination</li>
-          </ul>
-
-          <p>
-            Please do not submit identity documents, bank details or
-            confidential financial documents through this form.
-          </p>
-        </article>
-
-        <article class="card">
-          <h2>Commercial Property Enquiry</h2>
-
-          <form id="propertyForm">
-
-            <div class="field">
-              <label for="name">Full Name *</label>
-              <input
-                id="name"
-                name="Full name"
-                type="text"
-                autocomplete="name"
-                required
-              >
-            </div>
-
-            <div class="field">
-              <label for="phone">Phone Number *</label>
-              <input
-                id="phone"
-                name="Phone number"
-                type="tel"
-                autocomplete="tel"
-                required
-              >
-            </div>
-
-            <div class="field">
-              <label for="requirement">I Want To *</label>
-              <select id="requirement" name="Requirement" required>
-                <option value="">Choose an option</option>
-                <option>Buy a commercial property</option>
-                <option>Sell a commercial property</option>
-                <option>Lease a commercial property</option>
-                <option>List a property for lease</option>
-                <option>Explore an investment opportunity</option>
-              </select>
-            </div>
-
-            <div class="field">
-              <label for="type">Property Type</label>
-              <select id="type" name="Property type">
-                <option>Office / Commercial Building</option>
-                <option>Retail / Showroom</option>
-                <option>Industrial / Warehouse</option>
-                <option>Commercial Land</option>
-                <option>Other</option>
-              </select>
-            </div>
-
-            <div class="field">
-              <label for="location">Preferred Location *</label>
-              <input
-                id="location"
-                name="Preferred location"
-                type="text"
-                placeholder="City / District"
-                required
-              >
-            </div>
-
-            <div class="field">
-              <label for="budget">Budget / Expected Sale Value</label>
-              <input
-                id="budget"
-                name="Budget or expected sale value"
-                type="text"
-                placeholder="Approximate range"
-              >
-            </div>
-
-            <div class="field">
-              <label for="timeline">Timeline</label>
-              <select id="timeline" name="Timeline">
-                <option>Immediately</option>
-                <option>Within 1–3 months</option>
-                <option>Within 3–6 months</option>
-                <option>Exploring options</option>
-              </select>
-            </div>
-
-            <div class="field">
-              <label for="details">Additional Details</label>
-              <textarea
-                id="details"
-                name="Brief details"
-                placeholder="Briefly describe your requirement"
-              ></textarea>
-            </div>
-
-            <button class="btn" type="submit">
-              Continue to WhatsApp ↗
-            </button>
-
-            <p id="status" aria-live="polite">
-              Your enquiry details will be prepared as a WhatsApp message.
-            </p>
-
-          </form>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="contact">
-      <div class="wrap">
-        <h2>Talk to Our Team</h2>
-
-        <p>
-          Sarovaram Corporate Solutions<br>
-          Capital. Property. Growth.
-        </p>
-
-        <p>
-          Email:
-          <a href="mailto:Ceoaloomacorp@gmail.com">
-            Ceoaloomacorp@gmail.com
-          </a>
-        </p>
-
-        <p>
-          Phone:
-          <a href="tel:+919447907637">94479 07637</a>
-        </p>
-
-        <a
-          class="btn"
-          href="https://wa.me/919447907637"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          WhatsApp Us ↗
-        </a>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer>
+  <section class="section" id="property-services">
     <div class="wrap">
+      <span class="eyebrow">Property Solutions</span>
+      <h2>Commercial Property Services</h2>
 
-      <strong>Alooma Holdings Private Limited</strong>
-
-      <p>
-        Sarovaram Corporate Solutions is the business brand operated
-        by Alooma Holdings Private Limited.
+      <p class="lead">
+        Structured support for buyers, sellers, landlords, tenants
+        and investors exploring commercial property opportunities.
       </p>
 
-      <p>CIN: U67100KL2020PTC065780</p>
+      <div class="grid">
 
-      <p>
-        All engagements are undertaken by the relevant legal entity
-        or authorised service provider identified in the applicable
-        proposal, engagement letter, invoice or agreement.
-      </p>
+        <article class="card">
+          <h3 class="gold">01 · Property Purchase</h3>
+          <p>
+            Share your requirement to explore commercial buildings,
+            offices, retail spaces, warehouses or land for business use.
+          </p>
+          <h4>Ideal for</h4>
+          <p>Business owners, investors, developers and companies seeking property.</p>
+        </article>
 
-      <p>
-        © <span id="year"></span> Sarovaram Corporate Solutions.
-        All rights reserved.
-      </p>
+        <article class="card">
+          <h3 class="gold">02 · Property Sale</h3>
+          <p>
+            Share commercial property details for an initial discussion
+            about potential buyers and transaction requirements.
+          </p>
+          <h4>Ideal for</h4>
+          <p>Property owners, landlords, developers and investors considering a sale.</p>
+        </article>
+
+        <article class="card">
+          <h3 class="gold">03 · Leasing</h3>
+          <p>
+            Enquire about commercial spaces for lease or share details
+            of a property available for rental.
+          </p>
+          <h4>Ideal for</h4>
+          <p>Tenants, landlords, retailers and businesses seeking premises.</p>
+        </article>
+
+        <article class="card">
+          <h3 class="gold">04 · Investment Opportunities</h3>
+          <p>
+            Discuss preferred locations, property requirements and
+            broad investment objectives.
+          </p>
+          <h4>Ideal for</h4>
+          <p>Investors and businesses evaluating commercial property opportunities.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="propertyForm">
+    <div class="wrap grid">
+
+      <article class="card">
+        <span class="eyebrow">Start a Conversation</span>
+        <h2>Discuss Your Property Requirement</h2>
+
+        <p>
+          Tell us what you are looking for. Our team can review the
+          basic details and discuss possible next steps.
+        </p>
+
+        <ul>
+          <li>Initial requirement discussion</li>
+          <li>Property type and location details</li>
+          <li>Budget or expected sale value range</li>
+          <li>Timeline and next-step coordination</li>
+        </ul>
+
+        <p>
+          Please do not submit identity documents, bank details or
+          confidential financial documents through this form.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>Commercial Property Enquiry</h2>
+
+        <form id="propertyEnquiryForm">
+
+          <div class="field">
+            <label for="name">Full Name *</label>
+            <input id="name" name="Full name" type="text"
+                   autocomplete="name" required>
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone Number *</label>
+            <input id="phone" name="Phone number" type="tel"
+                   autocomplete="tel" required>
+          </div>
+
+          <div class="field">
+            <label for="requirement">I Want To *</label>
+            <select id="requirement" name="Requirement" required>
+              <option value="">Choose an option</option>
+              <option>Buy a commercial property</option>
+              <option>Sell a commercial property</option>
+              <option>Lease a commercial property</option>
+              <option>List a property for lease</option>
+              <option>Explore an investment opportunity</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="type">Property Type</label>
+            <select id="type" name="Property type">
+              <option>Office / Commercial Building</option>
+              <option>Retail / Showroom</option>
+              <option>Industrial / Warehouse</option>
+              <option>Commercial Land</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="location">Preferred Location *</label>
+            <input id="location" name="Preferred location"
+                   type="text" placeholder="City / District" required>
+          </div>
+
+          <div class="field">
+            <label for="budget">Budget / Expected Sale Value</label>
+            <input id="budget" name="Budget or expected sale value"
+                   type="text" placeholder="Approximate range">
+          </div>
+
+          <div class="field">
+            <label for="timeline">Timeline</label>
+            <select id="timeline" name="Timeline">
+              <option>Immediately</option>
+              <option>Within 1–3 months</option>
+              <option>Within 3–6 months</option>
+              <option>Exploring options</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="details">Additional Details</label>
+            <textarea id="details" name="Brief details"
+                      placeholder="Briefly describe your requirement"></textarea>
+          </div>
+
+          <button class="btn" type="submit">
+            Continue to WhatsApp ↗
+          </button>
+
+          <p id="status" aria-live="polite">
+            Your enquiry will be prepared as a WhatsApp message.
+          </p>
+
+        </form>
+      </article>
 
     </div>
-  </footer>
+  </section>
 
-  <!-- FLOATING WHATSAPP ICON -->
-  <a
-    class="floating"
-    href="https://wa.me/919447907637?text=Hello%20Sarovaram%20Corporate%20Solutions%2C%20I%20have%20a%20commercial%20property%20enquiry."
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Contact Sarovaram on WhatsApp"
-  >
-    <svg viewBox="0 0 32 32" aria-hidden="true">
-      <path d="M16 3A13 13 0 0 0 4.8 22.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.3a10.3 10.3 0 0 1-5.2-1.4l-.4-.2-3.9 1 1-3.8-.3-.4A10.3 10.3 0 1 1 16 26.3zm5.7-7.7c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.7l.5-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-1-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1.1 1.1-1.1 2.6 1.1 3 1.3 3.2c.2.2 2.2 3.4 5.4 4.7.8.3 1.4.5 1.8.6.8.2 1.5.2 2 .1.6-.1 1.8-.7 2.1-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.4z"/>
-    </svg>
-  </a>
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Talk to Our Team</h2>
 
-  <script>
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
+      <p>
+        Sarovaram Corporate Solutions<br>
+        Capital. Property. Growth.
+      </p>
 
-    document
-      .getElementById("propertyForm")
-      .addEventListener("submit", function (event) {
-        event.preventDefault();
+      <p>
+        Email:
+        <a href="mailto:Ceoaloomacorp@gmail.com">Ceoaloomacorp@gmail.com</a>
+      </p>
 
-        const formData = new FormData(this);
-        const lines = [
-          "Commercial Property Enquiry",
-          "Sarovaram Corporate Solutions",
-          ""
-        ];
+      <p>
+        Phone:
+        <a href="tel:+919447907637">94479 07637</a>
+      </p>
 
-        for (const [key, value] of formData.entries()) {
-          if (String(value).trim()) {
-            lines.push(key + ": " + value);
-          }
-        }
+      <a class="btn" href="https://wa.me/919447907637"
+         target="_blank" rel="noopener noreferrer">
+        WhatsApp Us ↗
+      </a>
+    </div>
+  </section>
 
-        lines.push(
-          "",
-          "Sent from the Sarovaram Corporate Solutions website."
-        );
+</main>
 
-        const whatsappURL =
-          "https://wa.me/919447907637?text=" +
-          encodeURIComponent(lines.join("\n"));
+<footer>
+  <div class="wrap">
+    <strong>Alooma Holdings Private Limited</strong>
 
-        document.getElementById("status").textContent =
-          "WhatsApp is opening with your enquiry. Please press Send in WhatsApp to deliver it.";
+    <p>
+      Sarovaram Corporate Solutions is the business brand operated
+      by Alooma Holdings Private Limited.
+    </p>
 
-        window.open(whatsappURL, "_blank");
-      });
-  </script>
+    <p>CIN: U67100KL2020PTC065780</p>
+
+    <p>
+      All engagements are undertaken by the relevant legal entity or
+      authorised service provider identified in the applicable proposal,
+      engagement letter, invoice or agreement.
+    </p>
+
+    <p>
+      © <span id="year"></span> Sarovaram Corporate Solutions.
+      All rights reserved.
+    </p>
+  </div>
+</footer>
+
+<a class="floating"
+   href="https://wa.me/919447907637?text=Hello%20Sarovaram%20Corporate%20Solutions%2C%20I%20have%20a%20commercial%20property%20enquiry."
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Contact Sarovaram on WhatsApp">
+
+  <svg viewBox="0 0 32 32" aria-hidden="true">
+    <path d="M16 3A13 13 0 0 0 4.8 22.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.3a10.3 10.3 0 0 1-5.2-1.4l-.4-.2-3.9 1 1-3.8-.3-.4A10.3 10.3 0 1 1 16 26.3zm5.7-7.7c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.7l.5-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-1-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1.1 1.1-1.1 2.6 1.1 3 1.3 3.2c.2.2 2.2 3.4 5.4 4.7.8.3 1.4.5 1.8.6.8.2 1.5.2 2 .1.6-.1 1.8-.7 2.1-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.4z"/>
+  </svg>
+</a>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", function() {
+  const isOpen = navLinks.classList.toggle("open");
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+});
+
+navLinks.querySelectorAll("a").forEach(function(link) {
+  link.addEventListener("click", function() {
+    navLinks.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded", "false");
+  });
+});
+
+document.getElementById("propertyEnquiryForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const formData = new FormData(this);
+  const lines = [
+    "Commercial Property Enquiry",
+    "Sarovaram Corporate Solutions",
+    ""
+  ];
+
+  for (const [key, value] of formData.entries()) {
+    if (String(value).trim()) {
+      lines.push(key + ": " + value);
+    }
+  }
+
+  lines.push("", "Sent from the Sarovaram Corporate Solutions website.");
+
+  const whatsappURL =
+    "https://wa.me/919447907637?text=" +
+    encodeURIComponent(lines.join("\n"));
+
+  document.getElementById("status").textContent =
+    "WhatsApp is opening with your enquiry. Please press Send in WhatsApp to deliver it.";
+
+  window.open(whatsappURL, "_blank", "noopener,noreferrer");
+});
+</script>
 
 </body>
 </html>
