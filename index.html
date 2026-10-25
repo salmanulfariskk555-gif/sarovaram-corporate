@@ -1,371 +1,1657 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sarovaram Corporate Solutions | Business Funding & Commercial Property Advisory Kerala</title>
-  <meta name="description" content="Sarovaram Corporate Solutions supports businesses, entrepreneurs, developers and investors with capital advisory, commercial real estate, loan facilitation and business expansion services across Kerala.">
-  <meta name="keywords" content="business funding Kerala, business loan facilitation Kerala, commercial property advisory Kerala, business finance Kochi, MSME funding, loan against property, capital raising Kerala, Sarovaram Corporate Solutions">
-  <meta name="robots" content="index,follow">
-  <meta name="theme-color" content="#07182B">
-  <style>
-    :root{--navy:#07182B;--navy2:#0d233b;--panel:#102944;--gold:#79D2F5;--gold2:#D7B675;--white:#FFFFFF;--muted:#c1ccda;--line:rgba(255,255,255,.12);--max:1160px}
-    *{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth;scroll-padding-top:88px}
-    body{font-family:Inter,Arial,Helvetica,sans-serif;background:var(--navy);color:var(--white);line-height:1.65}
-    a{color:inherit;text-decoration:none}
-    button,input,select,textarea{font:inherit}
-    .container{width:min(var(--max),calc(100% - 40px));margin:auto}
-    .section{padding:88px 0}
-    .eyebrow{display:inline-block;color:var(--gold);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:800;margin-bottom:13px}
-    h1,h2,h3{line-height:1.15;letter-spacing:-.025em}
-    h1{font-size:clamp(2.5rem,5vw,4.6rem);max-width:760px}
-    h2{font-size:clamp(2rem,3.5vw,3rem);margin-bottom:17px}
-    h3{font-size:1.22rem;margin-bottom:12px}
-    p{color:var(--muted)}
-    .lead{font-size:1.08rem;max-width:740px}
-    .gold{color:var(--gold)}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 19px;border-radius:8px;font-weight:800;border:1px solid var(--gold);transition:.2s;cursor:pointer}
-    .btn-primary{background:var(--gold);color:#101827}
-    .btn-primary:hover{background:var(--gold2);transform:translateY(-2px)}
-    .btn-outline{color:var(--white);background:transparent}
-    .btn-outline:hover{background:rgba(121,210,245,.1)}
-    .btn-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
-    .site-header{position:sticky;top:0;z-index:100;background:rgba(7,20,38,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-    .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .brand{font-weight:900;letter-spacing:.03em;font-size:1.03rem;display:flex;align-items:center;gap:10px}
-    .brand-mark{width:38px;height:38px;display:grid;place-items:center;border:1px solid var(--gold);border-radius:10px;color:var(--gold);font-weight:900}
-    .nav-links{display:flex;align-items:center;gap:23px;font-size:.9rem;color:#e0e7f0}
-    .nav-links a:hover{color:var(--gold)}
-    .menu-toggle{display:none;background:transparent;border:1px solid var(--line);color:white;padding:8px 11px;border-radius:7px}
-    .hero{position:relative;overflow:hidden;padding:76px 0 88px;background:radial-gradient(ellipse at 80% 30%,rgba(37,87,137,.28),transparent 42%),linear-gradient(135deg,#07182B,#0a1930)}
-    .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:35px;align-items:center}
-    .hero p{margin-top:22px;max-width:640px;font-size:1.08rem}
-    .trust-line{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:24px;color:#dce5f1;font-size:.9rem}
-    .trust-line span:before{content:"✓";color:var(--gold);font-weight:900;margin-right:8px}
-    .visual{height:440px;position:relative;display:grid;place-items:center;isolation:isolate}
-    .glow{position:absolute;width:290px;height:290px;border-radius:50%;background:rgba(121,210,245,.12);filter:blur(35px);z-index:-2}
-    .orbit{position:absolute;width:390px;height:130px;border:1px solid rgba(121,210,245,.42);border-radius:50%;transform:rotate(-28deg);animation:orbit 14s linear infinite}
-    .orbit.two{width:420px;height:160px;transform:rotate(35deg);border-color:rgba(120,174,230,.38);animation-duration:18s}
-    .building{position:relative;width:245px;height:315px;transform:perspective(900px) rotateY(-17deg) rotateX(3deg);filter:drop-shadow(25px 25px 20px rgba(0,0,0,.28));animation:float 5s ease-in-out infinite}
-    .building-main{position:absolute;bottom:0;left:48px;width:155px;height:250px;background:linear-gradient(90deg,#142e4b,#284c70 55%,#10233d);border:1px solid rgba(255,255,255,.18);transform:skewY(-4deg)}
-    .building-side{position:absolute;bottom:0;left:203px;width:35px;height:250px;background:linear-gradient(90deg,#0b1b30,#07182B);transform:skewY(-4deg) skewX(-10deg);transform-origin:left}
-    .building-top{position:absolute;left:42px;bottom:247px;width:165px;height:28px;background:linear-gradient(135deg,#3b5b79,#142a44);transform:skewY(-4deg) skewX(-10deg)}
-    .building-top:before{content:"";position:absolute;left:40px;top:-24px;width:75px;height:25px;background:#294763;transform:skewY(4deg)}
-    .windows{position:absolute;left:63px;bottom:22px;width:125px;height:208px;display:grid;grid-template-columns:repeat(4,1fr);gap:9px 8px;transform:skewY(-4deg)}
-    .windows span{background:linear-gradient(135deg,#dbeafe,#79D2F5);box-shadow:0 0 10px rgba(121,210,245,.2);opacity:.9}
-    .base{position:absolute;bottom:-8px;left:26px;width:220px;height:18px;background:#172f4b;transform:skewX(-25deg);border-top:2px solid var(--gold)}
-    .visual-label{position:absolute;bottom:15px;right:0;background:rgba(16,35,61,.9);border:1px solid var(--line);padding:12px 15px;border-radius:10px;font-size:.83rem;color:#eaf0f8}
-    .visual-label strong{display:block;color:var(--gold);font-size:1rem}
-    @keyframes float{0%,100%{transform:perspective(900px) rotateY(-17deg) rotateX(3deg) translateY(0)}50%{transform:perspective(900px) rotateY(-17deg) rotateX(3deg) translateY(-12px)}}
-    @keyframes orbit{to{transform:rotate(332deg)}}
-    .section-head{max-width:760px;margin-bottom:38px}
-    .section-head.center{text-align:center;margin-left:auto;margin-right:auto}
-    .section-head.center p{margin-inline:auto}
-    .grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
-    .grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-    .grid-4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
-    .card{background:linear-gradient(145deg,rgba(16,35,61,.94),rgba(10,26,46,.94));border:1px solid var(--line);border-radius:16px;padding:25px;height:100%}
-    .card p{font-size:.96rem}.card h4{margin-top:16px;color:var(--gold2);font-size:.76rem;letter-spacing:.14em;text-transform:uppercase}.ideal{margin-top:16px;padding:13px;border:1px solid rgba(121,210,245,.25);border-radius:10px;background:rgba(121,210,245,.06)}.ideal strong{font-size:.76rem;color:var(--gold2);letter-spacing:.12em;text-transform:uppercase}.ideal p{font-size:.86rem;margin-top:4px}.service-link{margin-top:14px;font-weight:700;color:var(--gold)}.service-link a:hover{text-decoration:underline}
-    .card ul{list-style:none;margin-top:15px}
-    .card li{color:#d7e0eb;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.07);font-size:.94rem}
-    .card li:last-child{border-bottom:0}
-    .card li:before{content:"✓";color:var(--gold);margin-right:9px;font-weight:900}
-    .icon-box{width:44px;height:44px;border-radius:12px;background:rgba(121,210,245,.12);border:1px solid rgba(121,210,245,.25);display:grid;place-items:center;color:var(--gold);font-size:1.25rem;margin-bottom:18px}
-    .about-band{background:#0a192c;border-block:1px solid var(--line)}
-    .stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}
-    .stat{border-left:2px solid var(--gold);padding:8px 14px}
-    .stat strong{display:block;color:var(--white);font-size:1.02rem}
-    .stat span{font-size:.87rem;color:var(--muted)}
-    .process-card{position:relative;padding-top:65px}
-    .step-number{position:absolute;top:22px;left:25px;color:var(--gold);font-weight:900;font-size:1.5rem}
-    .soft-band{background:linear-gradient(110deg,rgba(121,210,245,.09),rgba(16,35,61,.45));border-block:1px solid var(--line)}
-    .faq-list{max-width:900px;margin:auto;display:grid;gap:12px}
-    details{background:#0d1d33;border:1px solid var(--line);border-radius:10px;padding:18px 20px}
-    summary{cursor:pointer;font-weight:800;color:#f7f9fc}
-    details p{padding-top:12px}
-    .contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px;align-items:start}
-    .contact-list{display:grid;gap:15px;margin-top:24px}
-    .contact-item{padding:15px;border:1px solid var(--line);border-radius:10px;background:rgba(16,35,61,.65)}
-    .contact-item strong{display:block;color:var(--gold);font-size:.84rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
-    .contact-form{display:grid;gap:14px}
-    .field{display:grid;gap:7px}
-    .field label{font-size:.9rem;color:#e5ebf3;font-weight:700}
-    .field input,.field select,.field textarea{width:100%;background:#07182B;color:white;border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:12px 13px;outline:none}
-    .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold)}
-    .field textarea{min-height:120px;resize:vertical}
-    .form-note{font-size:.83rem;margin-top:4px}
-    .notice{font-size:.88rem;border-left:3px solid var(--gold);padding:12px 15px;background:rgba(121,210,245,.07);margin-top:18px}
-    .site-footer{background:#050e1b;border-top:1px solid var(--line);padding:38px 0 22px}
-    .footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:25px;padding-bottom:26px}
-    .footer-links{display:grid;gap:8px;color:var(--muted);font-size:.92rem}
-    .footer-links a:hover{color:var(--gold)}
-    .disclaimer{border-top:1px solid var(--line);padding-top:18px;margin-top:12px;font-size:.82rem}
-    .copyright{font-size:.82rem;margin-top:18px}
-    .reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}
-    .reveal.visible{opacity:1;transform:none}
-    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;scroll-behavior:auto!important;transition:none!important}.reveal{opacity:1;transform:none}}
-    @media(max-width:950px){.hero-grid{grid-template-columns:1fr}.hero-copy{text-align:center}.hero-copy h1,.hero-copy p{margin-inline:auto}.btn-row,.trust-line{justify-content:center}.visual{height:390px}.grid-4{grid-template-columns:repeat(2,1fr)}.grid-3{grid-template-columns:repeat(2,1fr)}.contact-grid{grid-template-columns:1fr}}
-    @media(max-width:760px){.section{padding:65px 0}.nav{min-height:68px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:68px;left:0;right:0;background:#07182B;border-bottom:1px solid var(--line);padding:18px 20px;flex-direction:column;align-items:stretch;gap:0}.nav-links.open{display:flex}.nav-links a{padding:11px 0}.nav-cta{display:none}.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}.hero{padding:60px 0}.visual{height:340px;transform:scale(.9);margin:-10px 0}.orbit{width:320px}.orbit.two{width:340px}.building{transform:scale(.86) perspective(900px) rotateY(-17deg) rotateX(3deg)}.visual-label{right:0;bottom:0}.stat-row{grid-template-columns:1fr}.footer-top{grid-template-columns:1fr}.container{width:min(var(--max),calc(100% - 30px))}}
-    .floating-whatsapp{position:fixed;right:20px;bottom:24px;z-index:9999;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#25D366;color:#fff;box-shadow:0 8px 24px rgba(0,0,0,.35);border:2px solid rgba(255,255,255,.85);transition:transform .2s}
-    .floating-whatsapp:hover{transform:scale(1.08)}
-    .floating-whatsapp svg{width:31px;height:31px;fill:currentColor}
-    @media(max-width:600px){.floating-whatsapp{width:56px;height:56px;right:15px;bottom:18px}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sarovaram Corporate Solutions | Corporate Finance, Investment & Commercial Property Advisory</title>
+
+<meta name="description" content="Sarovaram Corporate Solutions supports businesses with corporate finance, investment advisory, fractional CFO services, financial modelling, capital raising, fundraising, commercial real estate and business finance facilitation in Kerala.">
+
+<meta name="keywords" content="corporate finance advisory Kerala, fractional CFO Kochi, corporate investment advisory, financial modelling, fundraising advisory, capital raising Kerala, commercial property advisory Kochi, business loan facilitation">
+
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#07182B">
+
+<style>
+:root {
+  --navy: #07182B;
+  --navy2: #0d233b;
+  --panel: #102944;
+  --gold: #79D2F5;
+  --gold2: #D7B675;
+  --white: #FFFFFF;
+  --muted: #c1ccda;
+  --line: rgba(255,255,255,.12);
+  --max: 1160px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+}
+
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  background: var(--navy);
+  color: var(--white);
+  line-height: 1.65;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+.container {
+  width: min(var(--max), calc(100% - 40px));
+  margin: auto;
+}
+
+.section {
+  padding: 88px 0;
+}
+
+.eyebrow {
+  display: inline-block;
+  color: var(--gold);
+  font-size: .78rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 13px;
+}
+
+h1, h2, h3 {
+  line-height: 1.15;
+  letter-spacing: -.025em;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4.6rem);
+  max-width: 760px;
+}
+
+h2 {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  margin-bottom: 17px;
+}
+
+h3 {
+  font-size: 1.22rem;
+  margin-bottom: 12px;
+}
+
+p {
+  color: var(--muted);
+}
+
+.lead {
+  font-size: 1.08rem;
+  max-width: 740px;
+}
+
+.gold {
+  color: var(--gold);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 13px 19px;
+  border-radius: 8px;
+  font-weight: 800;
+  border: 1px solid var(--gold);
+  transition: .2s;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: #101827;
+}
+
+.btn-primary:hover {
+  background: var(--gold2);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  color: var(--white);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: rgba(121,210,245,.1);
+}
+
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(7,20,38,.94);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+
+.nav {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand {
+  font-weight: 900;
+  letter-spacing: .03em;
+  font-size: 1.03rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-mark {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--gold);
+  border-radius: 10px;
+  color: var(--gold);
+  font-weight: 900;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  font-size: .9rem;
+  color: #e0e7f0;
+}
+
+.nav-links a:hover {
+  color: var(--gold);
+}
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: 1px solid var(--line);
+  color: white;
+  padding: 8px 11px;
+  border-radius: 7px;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 76px 0 88px;
+  background:
+    radial-gradient(ellipse at 80% 30%, rgba(37,87,137,.28), transparent 42%),
+    linear-gradient(135deg,#07182B,#0a1930);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.08fr .92fr;
+  gap: 35px;
+  align-items: center;
+}
+
+.hero p {
+  margin-top: 22px;
+  max-width: 640px;
+  font-size: 1.08rem;
+}
+
+.trust-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  margin-top: 24px;
+  color: #dce5f1;
+  font-size: .9rem;
+}
+
+.trust-line span:before {
+  content: "✓";
+  color: var(--gold);
+  font-weight: 900;
+  margin-right: 8px;
+}
+
+.visual {
+  height: 440px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  isolation: isolate;
+}
+
+.glow {
+  position: absolute;
+  width: 290px;
+  height: 290px;
+  border-radius: 50%;
+  background: rgba(121,210,245,.12);
+  filter: blur(35px);
+  z-index: -2;
+}
+
+.orbit {
+  position: absolute;
+  width: 390px;
+  height: 130px;
+  border: 1px solid rgba(121,210,245,.42);
+  border-radius: 50%;
+  transform: rotate(-28deg);
+  animation: orbit 14s linear infinite;
+}
+
+.orbit.two {
+  width: 420px;
+  height: 160px;
+  transform: rotate(35deg);
+  border-color: rgba(120,174,230,.38);
+  animation-duration: 18s;
+}
+
+.building {
+  position: relative;
+  width: 245px;
+  height: 315px;
+  transform: perspective(900px) rotateY(-17deg) rotateX(3deg);
+  filter: drop-shadow(25px 25px 20px rgba(0,0,0,.28));
+  animation: float 5s ease-in-out infinite;
+}
+
+.building-main {
+  position: absolute;
+  bottom: 0;
+  left: 48px;
+  width: 155px;
+  height: 250px;
+  background: linear-gradient(90deg,#142e4b,#284c70 55%,#10233d);
+  border: 1px solid rgba(255,255,255,.18);
+  transform: skewY(-4deg);
+}
+
+.building-side {
+  position: absolute;
+  bottom: 0;
+  left: 203px;
+  width: 35px;
+  height: 250px;
+  background: linear-gradient(90deg,#0b1b30,#07182B);
+  transform: skewY(-4deg) skewX(-10deg);
+  transform-origin: left;
+}
+
+.building-top {
+  position: absolute;
+  left: 42px;
+  bottom: 247px;
+  width: 165px;
+  height: 28px;
+  background: linear-gradient(135deg,#3b5b79,#142a44);
+  transform: skewY(-4deg) skewX(-10deg);
+}
+
+.building-top:before {
+  content: "";
+  position: absolute;
+  left: 40px;
+  top: -24px;
+  width: 75px;
+  height: 25px;
+  background: #294763;
+  transform: skewY(4deg);
+}
+
+.windows {
+  position: absolute;
+  left: 63px;
+  bottom: 22px;
+  width: 125px;
+  height: 208px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 9px 8px;
+  transform: skewY(-4deg);
+}
+
+.windows span {
+  background: linear-gradient(135deg,#dbeafe,#79D2F5);
+  box-shadow: 0 0 10px rgba(121,210,245,.2);
+  opacity: .9;
+}
+
+.base {
+  position: absolute;
+  bottom: -8px;
+  left: 26px;
+  width: 220px;
+  height: 18px;
+  background: #172f4b;
+  transform: skewX(-25deg);
+  border-top: 2px solid var(--gold);
+}
+
+.visual-label {
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+  background: rgba(16,35,61,.9);
+  border: 1px solid var(--line);
+  padding: 12px 15px;
+  border-radius: 10px;
+  font-size: .83rem;
+  color: #eaf0f8;
+}
+
+.visual-label strong {
+  display: block;
+  color: var(--gold);
+  font-size: 1rem;
+}
+
+@keyframes float {
+  0%,100% {
+    transform: perspective(900px) rotateY(-17deg) rotateX(3deg) translateY(0);
+  }
+  50% {
+    transform: perspective(900px) rotateY(-17deg) rotateX(3deg) translateY(-12px);
+  }
+}
+
+@keyframes orbit {
+  to {
+    transform: rotate(332deg);
+  }
+}
+
+.section-head {
+  max-width: 760px;
+  margin-bottom: 38px;
+}
+
+.section-head.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-head.center p {
+  margin-inline: auto;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 22px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 18px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 16px;
+}
+
+.card {
+  background: linear-gradient(145deg,rgba(16,35,61,.94),rgba(10,26,46,.94));
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 25px;
+  height: 100%;
+}
+
+.card p {
+  font-size: .96rem;
+}
+
+.card h4 {
+  margin-top: 16px;
+  color: var(--gold2);
+  font-size: .76rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.ideal {
+  margin-top: 16px;
+  padding: 13px;
+  border: 1px solid rgba(121,210,245,.25);
+  border-radius: 10px;
+  background: rgba(121,210,245,.06);
+}
+
+.ideal strong {
+  font-size: .76rem;
+  color: var(--gold2);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.ideal p {
+  font-size: .86rem;
+  margin-top: 4px;
+}
+
+.service-link {
+  margin-top: 14px;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.service-link a:hover {
+  text-decoration: underline;
+}
+
+.card ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.card li {
+  color: #d7e0eb;
+  padding: 7px 0;
+  border-bottom: 1px solid rgba(255,255,255,.07);
+  font-size: .94rem;
+}
+
+.card li:last-child {
+  border-bottom: 0;
+}
+
+.card li:before {
+  content: "✓";
+  color: var(--gold);
+  margin-right: 9px;
+  font-weight: 900;
+}
+
+.icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(121,210,245,.12);
+  border: 1px solid rgba(121,210,245,.25);
+  display: grid;
+  place-items: center;
+  color: var(--gold);
+  font-size: 1.25rem;
+  margin-bottom: 18px;
+}
+
+.about-band {
+  background: #0a192c;
+  border-block: 1px solid var(--line);
+}
+
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 14px;
+  margin-top: 26px;
+}
+
+.stat {
+  border-left: 2px solid var(--gold);
+  padding: 8px 14px;
+}
+
+.stat strong {
+  display: block;
+  color: var(--white);
+  font-size: 1.02rem;
+}
+
+.stat span {
+  font-size: .87rem;
+  color: var(--muted);
+}
+
+.process-card {
+  position: relative;
+  padding-top: 65px;
+}
+
+.step-number {
+  position: absolute;
+  top: 22px;
+  left: 25px;
+  color: var(--gold);
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.soft-band {
+  background: linear-gradient(110deg,rgba(121,210,245,.09),rgba(16,35,61,.45));
+  border-block: 1px solid var(--line);
+}
+
+.faq-list {
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  gap: 12px;
+}
+
+details {
+  background: #0d1d33;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 18px 20px;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 800;
+  color: #f7f9fc;
+}
+
+details p {
+  padding-top: 12px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.contact-list {
+  display: grid;
+  gap: 15px;
+  margin-top: 24px;
+}
+
+.contact-item {
+  padding: 15px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(16,35,61,.65);
+}
+
+.contact-item strong {
+  display: block;
+  color: var(--gold);
+  font-size: .84rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  margin-bottom: 4px;
+}
+
+.contact-form {
+  display: grid;
+  gap: 14px;
+}
+
+.field {
+  display: grid;
+  gap: 7px;
+}
+
+.field label {
+  font-size: .9rem;
+  color: #e5ebf3;
+  font-weight: 700;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  background: #07182B;
+  color: white;
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 8px;
+  padding: 12px 13px;
+  outline: none;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: var(--gold);
+}
+
+.field textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-note {
+  font-size: .83rem;
+  margin-top: 4px;
+}
+
+.notice {
+  font-size: .88rem;
+  border-left: 3px solid var(--gold);
+  padding: 12px 15px;
+  background: rgba(121,210,245,.07);
+  margin-top: 18px;
+}
+
+.site-footer {
+  background: #050e1b;
+  border-top: 1px solid var(--line);
+  padding: 38px 0 22px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 25px;
+  padding-bottom: 26px;
+}
+
+.footer-links {
+  display: grid;
+  gap: 8px;
+  color: var(--muted);
+  font-size: .92rem;
+}
+
+.footer-links a:hover {
+  color: var(--gold);
+}
+
+.disclaimer {
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+  font-size: .84rem;
+}
+
+.copyright {
+  border-top: 1px solid var(--line);
+  margin-top: 20px;
+  padding-top: 18px;
+  font-size: .84rem;
+  text-align: center;
+}
+
+.floating-whatsapp {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 90;
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #25D366;
+  color: white;
+  box-shadow: 0 8px 25px rgba(0,0,0,.3);
+}
+
+.floating-whatsapp svg {
+  width: 31px;
+  height: 31px;
+  fill: currentColor;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .visual {
+    height: 360px;
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .section {
+    padding: 62px 0;
+  }
+
+  .container {
+    width: calc(100% - 30px);
+  }
+
+  .nav {
+    min-height: 68px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: #07182B;
+    border-bottom: 1px solid var(--line);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .hero {
+    padding: 55px 0 65px;
+  }
+
+  h1 {
+    font-size: clamp(2.2rem,10vw,3.4rem);
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-row {
+    grid-template-columns: 1fr;
+  }
+
+  .visual {
+    transform: scale(.88);
+    margin: -15px -20px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-row .btn {
+    width: 100%;
+  }
+}
+</style>
 </head>
+
 <body>
+
 <header class="site-header">
   <div class="container nav">
-    <a class="brand" href="#home" aria-label="Sarovaram Corporate Solutions home"><span class="brand-mark">S</span><span>SAROVARAM<br><small style="font-weight:500;color:#b8c4d5;letter-spacing:.12em">CORPORATE SOLUTIONS · CAPITAL · PROPERTY · GROWTH</small></span></a>
-    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks">Menu ☰</button>
-    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
-      <a href="#home">Home</a><a href="#about">About</a><a href="#divisions">Our Divisions</a><a href="#services">Services</a><a href="commercial-property.html">Commercial Property</a><a href="business-listings.html">Business Listings</a><a href="#process">Our Process</a><a href="#contact">Contact</a>
+    <a class="brand" href="#home">
+      <span class="brand-mark">S</span>
+      <span>
+        SAROVARAM<br>
+        <small style="font-weight:500;color:#b8c4d5;letter-spacing:.12em">
+          CORPORATE FINANCE · INVESTMENT · PROPERTY
+        </small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-label="Open navigation">
+      ☰ Menu
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#divisions">Business Divisions</a>
+      <a href="#services">Services</a>
+      <a href="#corporate-finance-advisory">Corporate Finance</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <a class="btn btn-primary nav-cta" href="#contact">Discuss Your Requirement ↗</a>
   </div>
 </header>
 
 <main>
-  <section class="hero" id="home">
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <span class="eyebrow">Business Advisory · Capital · Commercial Property</span>
-        <h1>Capital &amp; Commercial Property Advisory for <span class="gold">Businesses</span></h1>
-        <p>Supporting business owners, developers and investors with funding opportunities and commercial property decisions.</p>
-        <div class="btn-row"><a class="btn btn-primary" href="#contact">Discuss Your Requirement ↗</a><a class="btn btn-outline" href="#services">Explore Our Services</a></div>
-        <div class="trust-line"><span>Kerala market focus</span><span>Structured guidance</span><span>End-to-end coordination</span></div>
+
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Corporate Finance · Investment · Strategic Growth</span>
+
+      <h1>Corporate Finance, Investment &amp; Commercial Property Advisory</h1>
+
+      <p>
+        Supporting businesses, founders, promoters and investors through
+        fractional CFO services, financial modelling, investment strategy,
+        capital raising, fundraising, mergers and acquisitions, and
+        commercial property advisory.
+      </p>
+
+      <div class="trust-line">
+        <span>Business-focused advisory</span>
+        <span>Structured financial support</span>
+        <span>Kochi, Kerala, India</span>
       </div>
-      <div class="visual" aria-label="Decorative animated illustration of a modern commercial building">
-        <div class="glow"></div><div class="orbit"></div><div class="orbit two"></div>
-        <div class="building"><div class="building-main"></div><div class="building-side"></div><div class="building-top"></div><div class="windows">
-          <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-        </div><div class="base"></div></div>
-        <div class="visual-label"><strong>Plan · Structure · Execute</strong>Capital · Property · Growth</div>
+
+      <div class="btn-row">
+        <a class="btn btn-primary" href="#contact">Discuss Your Business Requirements ↗</a>
+        <a class="btn btn-outline" href="#services">Explore Our Advisory Services</a>
       </div>
     </div>
-  </section>
 
-  <section class="section about-band" id="about">
-    <div class="container grid-2" style="align-items:center;gap:40px">
-      <div class="reveal"><span class="eyebrow">About Sarovaram</span><h2>Clear direction for important business decisions.</h2>
-        <p class="lead">Sarovaram Corporate Solutions works with businesses, entrepreneurs, property owners and investors to assess opportunities and coordinate practical next steps across funding, commercial property and business expansion.</p>
-      </div>
-      <div class="reveal"><div class="card"><h3>Our approach</h3><ul><li>Understand your goals and business context</li><li>Assess requirements and possible routes</li><li>Explain options, documents and next steps</li><li>Coordinate the process with relevant parties</li></ul></div></div>
-    </div>
-  </section>
+    <div class="visual" aria-label="Corporate building illustration">
+      <div class="glow"></div>
+      <div class="orbit"></div>
+      <div class="orbit two"></div>
 
-  <section class="section" id="legal-entity">
-    <div class="container">
-      <div class="section-head"><span class="eyebrow">Legal Entity &amp; Brand</span><h2>A clear distinction between the company and the brand.</h2>
-        <p class="lead">Sarovaram Corporate Solutions is a business brand operated by Alooma Holdings Private Limited, a company incorporated in India under the Companies Act, 2013.</p>
+      <div class="building">
+        <div class="building-main"></div>
+        <div class="building-side"></div>
+        <div class="building-top"></div>
+        <div class="windows">
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <div class="base"></div>
       </div>
-      <div class="grid-2">
-        <article class="card"><div class="icon-box">▣</div><h3>Alooma Holdings Private Limited</h3><p><strong>Legal entity</strong></p><p style="margin-top:8px">CIN: U67100KL2020PTC065780</p></article>
-        <article class="card"><div class="icon-box">▤</div><h3>Sarovaram Corporate Solutions</h3><p><strong>Business brand / market-facing identity</strong></p><p style="margin-top:8px">Capital Advisors and Fincorp service divisions.</p></article>
-      </div>
-      <p style="margin-top:22px;font-size:.92rem">All engagements are undertaken by the relevant legal entity or authorised service provider identified in the applicable proposal, engagement letter, invoice or agreement.</p>
-    </div>
-  </section>
 
-  <section class="section" id="divisions">
-    <div class="container">
-      <div class="section-head center"><span class="eyebrow">Our Business Divisions</span><h2>Specialised support for different business needs.</h2><p class="lead">Explore the division that best matches your requirement.</p></div>
-      <div class="grid-2">
-        <article class="card reveal"><div class="icon-box">↗</div><span class="eyebrow">Division 01</span><h3>Sarovaram Capital Advisors</h3><p>Advisory support for businesses, developers and investors evaluating larger capital and commercial opportunities.</p><ul><li>Capital-raising advisory and opportunity assessment</li><li>Commercial property: buy, sell, lease and investment advisory</li><li>Mergers, acquisitions and strategic partnerships</li><li>Franchise planning and business expansion support</li><li>Coordination and documentation support through the process</li></ul></article>
-        <article class="card reveal"><div class="icon-box">▣</div><span class="eyebrow">Division 02</span><h3>Sarovaram Fincorp</h3><p>Loan facilitation support for eligible MSMEs, entrepreneurs and property owners who want to understand potential financing routes.</p><ul><li>Business loan facilitation</li><li>Loan against property (LAP) facilitation</li><li>Working capital requirement assessment</li><li>Initial eligibility and documentation guidance</li><li>Coordination with potential lending partners</li></ul><p class="notice">Sarovaram Fincorp is a loan facilitation service and not a lender. Loan approval, interest rates, fees and terms are determined solely by the relevant lending partner.</p></article>
+      <div class="visual-label">
+        <strong>Capital · Connections · Growth</strong>
+        Corporate Finance &amp; Advisory
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="section about-band" id="services">
-    <div class="container">
-      <div class="section-head"><span class="eyebrow">What We Do</span><h2>Services designed around your next move.</h2><p class="lead">The right solution depends on your business stage, purpose, documentation and the opportunity being considered.</p></div>
-      <div class="grid-3 services-grid">
-        <article class="card reveal"><div class="icon-box">₹</div><span class="eyebrow">01</span><h3>Capital Raising</h3><p>Helping businesses and projects prepare to approach suitable banks, NBFCs, HNIs, family offices and institutional investors.</p><h4>Key deliverables</h4><ul><li>Project assessment and positioning</li><li>Valuation and financial-model support</li><li>Investor / lender outreach coordination</li><li>Transaction coordination</li></ul><div class="ideal"><strong>Ideal for</strong><p>Businesses, developers and promoters seeking growth capital.</p></div></article>
-        <article class="card reveal"><div class="icon-box">⌂</div><span class="eyebrow">02</span><h3>Commercial Real Estate</h3><p>Advisory and transaction coordination for buying, selling, leasing and investing in commercial properties.</p><h4>Key deliverables</h4><ul><li>Market research and site evaluation</li><li>Property sourcing and shortlist</li><li>Valuation and deal-structure support</li><li>Negotiation and transaction coordination</li></ul><div class="ideal"><strong>Ideal for</strong><p>Investors, end-users, developers and owners of commercial assets.</p></div><p class="service-link"><a href="commercial-property.html">Explore property buy / sell support ↗</a></p></article>
-        <article class="card reveal"><div class="icon-box">⇄</div><span class="eyebrow">03</span><h3>Mergers &amp; Acquisitions</h3><p>Supporting business owners, shareholders and investors in assessing and coordinating strategic transactions.</p><h4>Key deliverables</h4><ul><li>Target identification</li><li>Business and financial due-diligence coordination</li><li>Deal structure and negotiation support</li><li>Transaction coordination</li></ul><div class="ideal"><strong>Ideal for</strong><p>Owners and investors looking to buy, sell or merge businesses.</p></div></article>
-        <article class="card reveal"><div class="icon-box">▤</div><span class="eyebrow">04</span><h3>Business Loan Facilitation</h3><p>Helping businesses explore term loans, project finance and other credit facilities through lending partners.</p><h4>Key deliverables</h4><ul><li>Initial eligibility discussion</li><li>Documentation guidance</li><li>Bank / NBFC coordination</li><li>Follow-up through the process</li></ul><div class="ideal"><strong>Ideal for</strong><p>MSMEs and established businesses seeking debt funding.</p></div></article>
-        <article class="card reveal"><div class="icon-box">◫</div><span class="eyebrow">05</span><h3>Working Capital &amp; LAP</h3><p>Facilitating discussions for working capital and Loan Against Property (LAP), subject to lender criteria.</p><h4>Key deliverables</h4><ul><li>Working-capital requirement analysis</li><li>LAP requirement structuring</li><li>Lender options and terms discussion</li><li>Documentation and application coordination</li></ul><div class="ideal"><strong>Ideal for</strong><p>Businesses seeking operating capital or property-backed finance.</p></div></article>
-        <article class="card reveal"><div class="icon-box">↗</div><span class="eyebrow">06</span><h3>Expansion &amp; Partnerships</h3><p>Helping businesses explore strategic partnerships, joint ventures, franchising and new-market opportunities.</p><h4>Key deliverables</h4><ul><li>Market-entry strategy discussion</li><li>Partner and JV identification support</li><li>Franchise and distribution structuring</li><li>Implementation coordination</li></ul><div class="ideal"><strong>Ideal for</strong><p>Business owners and brands looking to expand or scale through partners.</p></div><p class="service-link"><a href="business-listings.html">Explore business listings ↗</a></p></article>
-      </div>
+<section class="section" id="divisions">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Our Business Divisions</span>
+      <h2>Distinct Services. <span class="gold">Clear Direction.</span></h2>
+      <p class="lead">
+        Our business divisions are presented separately to help clients
+        identify the right service for their needs.
+      </p>
     </div>
-  </section>
 
-  <section class="section soft-band" id="property-business-links">
-    <div class="container"><div class="section-head center"><span class="eyebrow">Property &amp; Business Opportunities</span><h2>Looking to buy, sell or list?</h2><p class="lead">Use the dedicated pages to share a commercial property requirement or submit a business listing enquiry.</p></div><div class="grid-2"><article class="card"><div class="icon-box">⌂</div><h3>Commercial Property Buy / Sell</h3><p>Share your property requirement, location, budget or expected sale value, and timeline.</p><p class="btn-row"><a class="btn btn-primary" href="commercial-property.html">Explore Property Page ↗</a></p></article><article class="card"><div class="icon-box">▦</div><h3>Business Listings</h3><p>For owners exploring a business sale, acquisition opportunity, partnership or strategic investment.</p><p class="btn-row"><a class="btn btn-primary" href="business-listings.html">Explore Business Listings ↗</a></p></article></div></div>
-  </section>
+    <div class="grid-3">
+      <article class="card reveal">
+        <div class="icon-box">▤</div>
+        <h3>Corporate Finance &amp; Advisory</h3>
+        <p>
+          Finance leadership support, financial modelling, investment
+          advisory, capital raising and fundraising coordination for
+          businesses exploring growth opportunities.
+        </p>
+        <div class="service-link">
+          <a href="#corporate-finance-advisory">Explore Corporate Finance ↗</a>
+        </div>
+      </article>
 
-  <section class="section" id="process">
-    <div class="container">
-      <div class="section-head center"><span class="eyebrow">How We Work</span><h2>A clear process from enquiry to next steps.</h2><p class="lead">We aim to make complex business requirements easier to understand and coordinate.</p></div>
-      <div class="grid-4">
-        <article class="card process-card reveal"><span class="step-number">01</span><h3>Discuss</h3><p>We understand your objective, timeline, broad requirement and current situation.</p></article>
-        <article class="card process-card reveal"><span class="step-number">02</span><h3>Assess</h3><p>We review the available information and identify potential routes and key considerations.</p></article>
-        <article class="card process-card reveal"><span class="step-number">03</span><h3>Structure</h3><p>We outline practical next steps, required information and relevant parties to approach.</p></article>
-        <article class="card process-card reveal"><span class="step-number">04</span><h3>Coordinate</h3><p>We help coordinate discussions and documentation. Outcomes depend on counterparties and their criteria.</p></article>
-      </div>
+      <article class="card reveal">
+        <div class="icon-box">⌂</div>
+        <h3>Commercial Real Estate</h3>
+        <p>
+          Advisory and transaction coordination for commercial property
+          acquisition, disposal, leasing and investment opportunities.
+        </p>
+        <div class="service-link">
+          <a href="commercial-property.html">Explore Commercial Property ↗</a>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="icon-box">₹</div>
+        <h3>Sarovaram Fincorp</h3>
+        <p>
+          Business loan facilitation and working capital finance support,
+          subject to eligibility and the terms of the relevant lending partner.
+        </p>
+        <div class="service-link">
+          <a href="#fincorp-enquiry">Make a Financing Enquiry ↗</a>
+        </div>
+      </article>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="section soft-band" id="why-us">
-    <div class="container grid-2" style="align-items:center;gap:40px">
-      <div class="reveal"><span class="eyebrow">Why Sarovaram</span><h2>Practical guidance. Transparent communication.</h2><p class="lead">Business and funding decisions require clarity. Our focus is on understanding your requirement, explaining the process and helping you prepare for informed discussions.</p></div>
-      <div class="grid-2">
-        <div class="card reveal"><h3 class="gold">Local context</h3><p>Kerala-focused understanding of business requirements and commercial opportunities.</p></div>
-        <div class="card reveal"><h3 class="gold">Clear assessment</h3><p>Discuss realistic possibilities, requirements and limitations upfront.</p></div>
-        <div class="card reveal"><h3 class="gold">Coordinated support</h3><p>Help organise the next steps and communication with relevant parties.</p></div>
-        <div class="card reveal"><h3 class="gold">Client-focused</h3><p>Guidance shaped around the client's stated goals and available information.</p></div>
-      </div>
+<section class="section about-band" id="corporate-finance-advisory">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Corporate Finance Advisory</span>
+      <h2>Financial Clarity for <span class="gold">Business Growth</span></h2>
+      <p class="lead">
+        Practical advisory support for business owners and promoters who
+        need stronger financial planning, structured investment analysis
+        and support preparing for growth or fundraising discussions.
+      </p>
     </div>
-  </section>
 
-  <section class="section" id="faq">
-    <div class="container">
-      <div class="section-head center"><span class="eyebrow">FAQs</span><h2>Frequently asked questions.</h2><p class="lead">A few useful points before you contact us.</p></div>
-      <div class="faq-list">
-        <details><summary>What kind of businesses can contact Sarovaram?</summary><p>Business owners, MSMEs, entrepreneurs, property owners, developers and investors can contact us to discuss their requirement. The available support depends on the specific case.</p></details>
-        <details><summary>Does Sarovaram provide loans directly?</summary><p>No. Sarovaram Fincorp is a loan facilitation service, not a lender. Any approval, rate, fee, amount and repayment terms are subject to the relevant lending partner's assessment and final decision.</p></details>
-        <details><summary>Can I enquire about a business loan or loan against property?</summary><p>Yes. You can share a brief overview of your requirement. Any possible financing route depends on eligibility, documentation, property details where applicable and the lender's policies.</p></details>
-        <details><summary>Does Sarovaram guarantee funding or a transaction?</summary><p>No. An enquiry or advisory process does not guarantee funding, loan approval, a property transaction, an investment, a partnership or any particular outcome.</p></details>
-        <details><summary>What should I prepare before contacting you?</summary><p>Start with your business or project overview, purpose, approximate requirement and timeline. Share sensitive financial or identity documents only through an appropriate, secure channel when requested.</p></details>
-        <details><summary>Is there a minimum requirement for Capital Advisors?</summary><p>Please confirm the applicable minimum ticket size or project threshold directly with Sarovaram Capital Advisors before relying on a fixed amount.</p></details>
-      </div>
+    <div class="grid-2">
+      <article class="card reveal">
+        <div class="icon-box">▤</div>
+        <span class="eyebrow">01</span>
+        <h3>Fractional CFO Services</h3>
+        <p>
+          Ongoing finance leadership support for businesses that need
+          stronger financial planning and decision support without a
+          full-time CFO appointment.
+        </p>
+        <h4>Key Deliverables</h4>
+        <ul>
+          <li>Management reporting and KPI review</li>
+          <li>Budgeting and cash-flow planning</li>
+          <li>Financial performance insights</li>
+          <li>Support for strategic finance decisions</li>
+        </ul>
+      </article>
+
+      <article class="card reveal">
+        <div class="icon-box">◎</div>
+        <span class="eyebrow">02</span>
+        <h3>Corporate Investment Advisory</h3>
+        <p>
+          Structured support to assess investment opportunities,
+          business priorities and potential strategic routes.
+        </p>
+        <h4>Key Deliverables</h4>
+        <ul>
+          <li>Investment opportunity assessment</li>
+          <li>Financial and commercial analysis coordination</li>
+          <li>Strategic options and risk discussion</li>
+          <li>Transaction and stakeholder coordination</li>
+        </ul>
+      </article>
+
+      <article class="card reveal">
+        <div class="icon-box">▥</div>
+        <span class="eyebrow">03</span>
+        <h3>Financial Modelling</h3>
+        <p>
+          Support to organise business assumptions and build financial
+          views for planning, funding discussions and decision-making.
+        </p>
+        <h4>Key Deliverables</h4>
+        <ul>
+          <li>Forecasting and scenario analysis</li>
+          <li>Cash-flow and funding requirement modelling</li>
+          <li>Business-plan financial inputs</li>
+          <li>Model review and presentation support</li>
+        </ul>
+      </article>
+
+      <article class="card reveal">
+        <div class="icon-box">₹</div>
+        <span class="eyebrow">04</span>
+        <h3>Capital Raising &amp; Fundraising</h3>
+        <p>
+          Helping businesses and projects prepare to approach suitable
+          banks, NBFCs, HNIs, family offices and institutional investors.
+        </p>
+        <h4>Key Deliverables</h4>
+        <ul>
+          <li>Project assessment and positioning</li>
+          <li>Valuation and financial-model support</li>
+          <li>Investor and lender outreach coordination</li>
+          <li>Transaction coordination</li>
+        </ul>
+      </article>
+
+      <article class="card reveal">
+        <div class="icon-box">⇄</div>
+        <span class="eyebrow">05</span>
+        <h3>Mergers &amp; Acquisitions</h3>
+        <p>
+          Coordination support for businesses exploring acquisitions,
+          strategic combinations or ownership transitions.
+        </p>
+        <h4>Key Deliverables</h4>
+        <ul>
+          <li>Potential target identification support</li>
+          <li>Due diligence coordination</li>
+          <li>Deal structure and negotiation support</li>
+          <li>Transaction coordination</li>
+        </ul>
+      </article>
+
+      <article class="card reveal">
+        <div class="icon-box">↗</div>
+        <span class="eyebrow">06</span>
+        <h3>Expansion &amp; Strategic Partnerships</h3>
+        <p>
+          Supporting businesses as they assess expansion plans,
+          partnerships, joint ventures and new-market opportunities.
+        </p>
+        <h4>Key Deliverables</h4>
+        <ul>
+          <li>Market-entry planning support</li>
+          <li>Partner and JV opportunity identification</li>
+          <li>Franchise and distribution discussions</li>
+          <li>Implementation coordination</li>
+        </ul>
+      </article>
     </div>
-  </section>
 
-  <section class="section soft-band">
-    <div class="container grid-2" style="align-items:center;gap:30px">
-      <div><span class="eyebrow">Start a Conversation</span><h2>Have a business or property requirement?</h2><p class="lead">Tell us what you are planning. We can use the first conversation to understand your requirement and discuss possible next steps.</p></div>
-      <div class="btn-row" style="align-self:center"><a class="btn btn-primary" href="#contact">Contact Sarovaram ↗</a><a class="btn btn-outline" href="#services">Review Services</a></div>
+    <div class="notice">
+      Advisory services are subject to scope, eligibility and an agreed
+      engagement. Funding, investment returns or transaction completion
+      are not guaranteed.
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="section" id="contact">
-    <div class="container">
-      <div class="section-head"><span class="eyebrow">Contact Us</span><h2>Choose the right enquiry route.</h2><p class="lead">Choose the enquiry route that best matches your requirement. Submit your details to open a prepared WhatsApp message to our business team.</p></div>
-      <div class="grid-2" style="margin-bottom:28px">
-        <article class="card reveal">
-          <div class="icon-box">↗</div><span class="eyebrow">Enquiry Route 01</span>
-          <h3>Sarovaram Capital Advisors</h3>
-          <p>For capital raising, commercial property, acquisitions, partnerships and business expansion.</p>
-          <form class="contact-form" id="capitalForm" style="margin-top:18px">
-            <div class="field"><label for="capName">Name *</label><input id="capName" name="Name" required autocomplete="name" placeholder="Your name"></div>
-            <div class="field"><label for="capContact">Phone or email *</label><input id="capContact" name="Phone or email" required placeholder="How can we contact you?"></div>
-            <div class="field"><label for="capProject">Project type *</label><select id="capProject" name="Project type" required><option value="">Select project type</option><option>Capital raising</option><option>Commercial property - buy</option><option>Commercial property - sell</option><option>Commercial property - lease</option><option>Mergers & acquisitions</option><option>Strategic partnership</option><option>Franchise / business expansion</option><option>Other</option></select></div>
-            <div class="field"><label for="capAmount">Approximate capital requirement *</label><select id="capAmount" name="Approximate capital requirement" required><option value="">Select approximate range</option><option>Below ₹25 lakh</option><option>₹25 lakh – ₹1 crore</option><option>₹1 crore – ₹5 crore</option><option>₹5 crore – ₹10 crore</option><option>Above ₹10 crore</option><option>Not sure yet</option></select></div>
-            <div class="field"><label for="capLocation">Project location *</label><input id="capLocation" name="Project location" required placeholder="City / district / state"></div>
-            <div class="field"><label for="capTimeline">Expected timeline *</label><select id="capTimeline" name="Expected timeline" required><option value="">Choose timeline</option><option>Immediately / within 1 month</option><option>1–3 months</option><option>3–6 months</option><option>6+ months</option><option>Exploring options</option></select></div>
-            <div class="field"><label for="capNotes">Brief project summary</label><textarea id="capNotes" name="Project summary" placeholder="Short overview only. Do not include confidential documents or sensitive numbers."></textarea></div>
-            <button class="btn btn-primary" type="submit">Prepare Capital Enquiry ↗</button>
-            <p class="form-note" id="capitalStatus" aria-live="polite">Your details will be prepared as a WhatsApp message. Press Send in WhatsApp to deliver it.</p>
-          </form>
-        </article>
-        <article class="card reveal">
-          <div class="icon-box">▣</div><span class="eyebrow">Enquiry Route 02</span>
-          <h3>Sarovaram Fincorp</h3>
-          <p>For business finance, working capital and loan-against-property enquiries.</p>
-          <form class="contact-form" id="fincorpForm" style="margin-top:18px">
-            <div class="field"><label for="finName">Name *</label><input id="finName" name="Name" required autocomplete="name" placeholder="Your name"></div>
-            <div class="field"><label for="finContact">Phone or email *</label><input id="finContact" name="Phone or email" required placeholder="How can we contact you?"></div>
-            <div class="field"><label for="finPurpose">Financing purpose *</label><select id="finPurpose" name="Financing purpose" required><option value="">Select purpose</option><option>Business loan</option><option>Working capital</option><option>Loan against property</option><option>Business expansion</option><option>Other</option></select></div>
-            <div class="field"><label for="finAmount">Approximate financing requirement *</label><select id="finAmount" name="Approximate financing requirement" required><option value="">Select approximate range</option><option>Below ₹5 lakh</option><option>₹5 lakh – ₹25 lakh</option><option>₹25 lakh – ₹1 crore</option><option>Above ₹1 crore</option><option>Not sure yet</option></select></div>
-            <div class="field"><label for="finBusiness">Business type / basic details *</label><input id="finBusiness" name="Business type" required placeholder="e.g. retail, manufacturing, services"></div>
-            <div class="field"><label for="finLocation">Business / property location *</label><input id="finLocation" name="Business / property location" required placeholder="City / district / state"></div>
-            <div class="field"><label for="finTimeline">Expected timeline *</label><select id="finTimeline" name="Expected timeline" required><option value="">Choose timeline</option><option>Immediately / within 1 month</option><option>1–3 months</option><option>3–6 months</option><option>Exploring options</option></select></div>
-            <div class="field"><label for="finNotes">Additional details (optional)</label><textarea id="finNotes" name="Brief requirement" placeholder="Briefly describe the requirement. Do not enter Aadhaar, PAN, bank details or confidential documents."></textarea></div>
-            <button class="btn btn-primary" type="submit">Prepare Fincorp Enquiry ↗</button>
-            <p class="form-note" id="fincorpStatus" aria-live="polite">Sarovaram Fincorp is a loan facilitation service, not a lender. Approval and terms depend on the lending partner.</p>
-          </form>
-        </article>
-      </div>
-      <div class="contact-grid">
-        <div>
-          <p>Prefer a general enquiry? Contact our team directly or send a brief message using the form.</p>
-          <div class="contact-list">
-            <div class="contact-item"><strong>Phone / WhatsApp</strong><p><a href="tel:+919447907637">Call: 94479 07637 ↗</a><br><a href="https://wa.me/919447907637" target="_blank" rel="noopener noreferrer">Chat on WhatsApp ↗</a></p></div>
-            <div class="contact-item"><strong>Email</strong><p><a href="mailto:Ceoaloomacorp@gmail.com">Ceoaloomacorp@gmail.com</a></p></div>
-            <div class="contact-item"><strong>Office address</strong><p>Greenland Heights, 4th Floor, KRA Business Centre, Near NH Bypass Junction, Nethaji Road, Palarivattom, Kochi, Kerala, India – 682025</p></div>
-            <div class="contact-item"><strong>Business hours</strong><p>Please contact us to confirm availability.</p></div>
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Our Services</span>
+      <h2>Support Across Key <span class="gold">Business Needs</span></h2>
+      <p class="lead">
+        Choose the service that best matches your business requirement.
+        Our team can discuss the scope and the next steps with you.
+      </p>
+    </div>
+
+    <div class="grid-3">
+      <article class="card reveal">
+        <h3>Capital Raising</h3>
+        <p>
+          Support in preparing business requirements and coordinating
+          discussions with potential funding partners.
+        </p>
+      </article>
+
+      <article class="card reveal">
+        <h3>Business Loan Facilitation</h3>
+        <p>
+          Guidance on potential lending options and documentation,
+          subject to lender assessment and eligibility.
+        </p>
+      </article>
+
+      <article class="card reveal">
+        <h3>Working Capital Finance</h3>
+        <p>
+          Support to structure working capital requirements and
+          coordinate discussions with suitable lending partners.
+        </p>
+      </article>
+
+      <article class="card reveal">
+        <h3>Commercial Real Estate</h3>
+        <p>
+          Advisory and coordination for commercial property purchase,
+          sale, leasing and investment discussions.
+        </p>
+        <div class="service-link">
+          <a href="commercial-property.html">Commercial Property Details ↗</a>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <h3>Investment Advisory</h3>
+        <p>
+          Structured discussion and analysis to help businesses assess
+          strategic investment opportunities and related considerations.
+        </p>
+      </article>
+
+      <article class="card reveal">
+        <h3>Business Expansion</h3>
+        <p>
+          Support with partnership exploration, joint ventures,
+          franchise opportunities and expansion planning.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section soft-band" id="about">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">About Sarovaram</span>
+      <h2>Advisory Built Around <span class="gold">Business Needs</span></h2>
+      <p class="lead">
+        Sarovaram Corporate Solutions supports businesses and promoters
+        through corporate finance advisory, investment-related analysis,
+        capital raising coordination and commercial property advisory.
+      </p>
+    </div>
+
+    <div class="grid-2">
+      <article class="card reveal">
+        <h3>Our Approach</h3>
+        <p>
+          We begin by understanding the business requirement, reviewing
+          the available information and discussing possible next steps.
+          The scope of each engagement is agreed with the client.
+        </p>
+      </article>
+
+      <article class="card reveal">
+        <h3>Professional Profile &amp; Credentials</h3>
+        <p>
+          Professional profile, qualifications and appointment credentials
+          should be added here after they have been confirmed and approved
+          by the company. No unverified credentials are claimed on this page.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="process">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">How We Work</span>
+      <h2>A Clear, <span class="gold">Structured Process</span></h2>
+      <p class="lead">
+        A practical process to understand your requirements and discuss
+        suitable advisory or facilitation options.
+      </p>
+    </div>
+
+    <div class="grid-3">
+      <article class="card process-card reveal">
+        <span class="step-number">01</span>
+        <h3>Understand</h3>
+        <p>
+          Share your business requirement and the outcome you are
+          exploring. Avoid sending confidential financial documents
+          through the public enquiry form.
+        </p>
+      </article>
+
+      <article class="card process-card reveal">
+        <span class="step-number">02</span>
+        <h3>Assess</h3>
+        <p>
+          We discuss the requirement, available information, possible
+          scope of support and any relevant eligibility considerations.
+        </p>
+      </article>
+
+      <article class="card process-card reveal">
+        <span class="step-number">03</span>
+        <h3>Agree Next Steps</h3>
+        <p>
+          The proposed scope, fees, responsibilities and deliverables
+          are confirmed in the applicable engagement documentation.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section about-band" id="contact">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Contact Us</span>
+      <h2>Discuss Your Business <span class="gold">Requirements</span></h2>
+      <p class="lead">
+        Tell us briefly what support you are looking for. We will use
+        your enquiry to understand the nature of your requirement.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+      <div>
+        <p>
+          Prefer a general enquiry? Contact our team directly or use
+          the form to prepare a WhatsApp message.
+        </p>
+
+        <div class="contact-list">
+          <div class="contact-item">
+            <strong>Phone / WhatsApp</strong>
+            <p>
+              <a href="tel:+919447907637">Call: 94479 07637 ↗</a><br>
+              <a href="https://wa.me/919447907637" target="_blank" rel="noopener noreferrer">
+                Chat on WhatsApp ↗
+              </a>
+            </p>
+          </div>
+
+          <div class="contact-item">
+            <strong>Email</strong>
+            <p>
+              <a href="mailto:Ceoaloomacorp@gmail.com">Ceoaloomacorp@gmail.com</a>
+            </p>
+          </div>
+
+          <div class="contact-item">
+            <strong>Office Address</strong>
+            <p>
+              Greenland Heights, 4th Floor, KRA Business Centre,
+              Near NH Bypass Junction, Nethaji Road, Palarivattom,
+              Kochi, Kerala, India – 682025
+            </p>
+          </div>
+
+          <div class="contact-item">
+            <strong>Business Hours</strong>
+            <p>Please contact us to confirm availability.</p>
           </div>
         </div>
-        <div class="card">
-          <form class="contact-form" id="enquiryForm">
-            <div class="grid-2">
-              <div class="field"><label for="name">Full name *</label><input id="name" name="name" autocomplete="name" required placeholder="Your name"></div>
-              <div class="field"><label for="phone">Phone number *</label><input id="phone" name="phone" autocomplete="tel" required inputmode="tel" placeholder="Your contact number"></div>
+      </div>
+
+      <div class="card">
+        <form class="contact-form" id="enquiryForm">
+          <div class="grid-2">
+            <div class="field">
+              <label for="name">Full Name *</label>
+              <input id="name" name="Full name" autocomplete="name" required placeholder="Your name">
             </div>
-            <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com"></div>
-            <div class="field"><label for="division">Enquiry type *</label><select id="division" name="division" required><option value="">Select a requirement</option><option>Capital Advisory</option><option>Commercial Real Estate</option><option>Mergers & Acquisitions</option><option>Business Loan Facilitation</option><option>Loan Against Property</option><option>Working Capital</option><option>Business Expansion / Partnership</option><option>Other</option></select></div>
-            <div class="field"><label for="message">Briefly describe your requirement *</label><textarea id="message" name="message" required placeholder="Tell us about your business or project and what support you are looking for."></textarea></div>
-            <button class="btn btn-primary" type="submit">Prepare Enquiry Message ↗</button>
-            <p class="form-note" id="formStatus" aria-live="polite">Submit opens WhatsApp with your enquiry details filled in. Press Send in WhatsApp to deliver the enquiry.</p>
-          </form>
-        </div>
+
+            <div class="field">
+              <label for="phone">Phone Number *</label>
+              <input id="phone" name="Phone number" autocomplete="tel" required inputmode="tel" placeholder="Your contact number">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="email">Email Address</label>
+            <input id="email" name="Email address" type="email" autocomplete="email" placeholder="you@example.com">
+          </div>
+
+          <div class="field">
+            <label for="division">Enquiry Type *</label>
+            <select id="division" name="Enquiry type" required>
+              <option value="">Select a requirement</option>
+              <option>Fractional CFO Services</option>
+              <option>Financial Modelling</option>
+              <option>Corporate Investment Advisory</option>
+              <option>Fundraising</option>
+              <option>Capital Raising</option>
+              <option>Commercial Real Estate</option>
+              <option>Mergers & Acquisitions</option>
+              <option>Business Loan Facilitation</option>
+              <option>Working Capital Finance</option>
+              <option>Business Expansion / Partnership</option>
+              <option>Sarovaram Fincorp Enquiry</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="message">Briefly Describe Your Requirement *</label>
+            <textarea id="message" name="Requirement details" required placeholder="Tell us about your business or project and the support you are looking for."></textarea>
+          </div>
+
+          <button class="btn btn-primary" type="submit">
+            Prepare Enquiry Message ↗
+          </button>
+
+          <p class="form-note" id="formStatus" aria-live="polite">
+            This form prepares a WhatsApp message. You must press Send in WhatsApp to deliver the enquiry.
+          </p>
+        </form>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<section class="section" id="fincorp-enquiry">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Sarovaram Fincorp</span>
+      <h2>Business Finance <span class="gold">Enquiry</span></h2>
+      <p class="lead">
+        Share basic details about your financing requirement. All
+        financing requests are subject to the assessment and terms of
+        the relevant lending partner.
+      </p>
+    </div>
+
+    <div class="card">
+      <form class="contact-form" id="fincorpForm">
+        <div class="grid-2">
+          <div class="field">
+            <label for="finName">Full Name *</label>
+            <input id="finName" name="Full name" required placeholder="Your name">
+          </div>
+
+          <div class="field">
+            <label for="finPhone">Phone Number *</label>
+            <input id="finPhone" name="Phone number" required inputmode="tel" placeholder="Your contact number">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="finType">Financing Requirement *</label>
+          <select id="finType" name="Financing requirement" required>
+            <option value="">Select requirement</option>
+            <option>Business Loan</option>
+            <option>Working Capital</option>
+            <option>Loan Against Property</option>
+            <option>Project Finance</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="finAmount">Approximate Requirement *</label>
+          <select id="finAmount" name="Approximate amount" required>
+            <option value="">Select amount</option>
+            <option>Below ₹10 lakh</option>
+            <option>₹10 lakh – ₹25 lakh</option>
+            <option>₹25 lakh – ₹1 crore</option>
+            <option>Above ₹1 crore</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="finBusiness">Business Type / Basic Details *</label>
+          <input id="finBusiness" name="Business type" required placeholder="e.g. retail, manufacturing, services">
+        </div>
+
+        <div class="field">
+          <label for="finLocation">Business / Property Location *</label>
+          <input id="finLocation" name="Business / property location" required placeholder="City / district / state">
+        </div>
+
+        <div class="field">
+          <label for="finTimeline">Expected Timeline *</label>
+          <select id="finTimeline" name="Expected timeline" required>
+            <option value="">Choose timeline</option>
+            <option>Immediately / within 1 month</option>
+            <option>1–3 months</option>
+            <option>3–6 months</option>
+            <option>Exploring options</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="finNotes">Additional Details (Optional)</label>
+          <textarea id="finNotes" name="Additional details" placeholder="Briefly describe the requirement. Do not enter Aadhaar, PAN, bank details or confidential documents."></textarea>
+        </div>
+
+        <button class="btn btn-primary" type="submit">
+          Prepare Fincorp Enquiry ↗
+        </button>
+
+        <p class="form-note" id="fincorpStatus" aria-live="polite">
+          Sarovaram Fincorp is a loan facilitation service, not a lender.
+          Approval and terms depend on the lending partner.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">FAQs</span>
+      <h2>Frequently Asked <span class="gold">Questions</span></h2>
+    </div>
+
+    <div class="faq-list">
+      <details>
+        <summary>Does Sarovaram guarantee funding or loan approval?</summary>
+        <p>
+          No. Funding and loan approval are not guaranteed. Decisions,
+          eligibility, fees and terms depend on the relevant funding
+          or lending partner and the details of each case.
+        </p>
+      </details>
+
+      <details>
+        <summary>Can businesses enquire about Fractional CFO services?</summary>
+        <p>
+          Yes. Businesses can submit an enquiry about Fractional CFO
+          services, financial modelling and corporate finance advisory.
+          The scope of support is discussed before an engagement begins.
+        </p>
+      </details>
+
+      <details>
+        <summary>Does Sarovaram provide commercial property support?</summary>
+        <p>
+          Commercial real estate is a separate service line. Enquiries
+          can cover commercial property purchase, sale, leasing and
+          related advisory or transaction coordination.
+        </p>
+      </details>
+
+      <details>
+        <summary>How do I submit an enquiry?</summary>
+        <p>
+          Complete the relevant enquiry form. Your browser will prepare
+          a WhatsApp message, and you must press Send in WhatsApp to
+          submit it to the company.
+        </p>
+      </details>
+    </div>
+  </div>
+</section>
+
 </main>
 
 <footer class="site-footer">
   <div class="container">
     <div class="footer-top">
-      <div><a class="brand" href="#home"><span class="brand-mark">S</span><span>SAROVARAM<br><small style="font-weight:500;color:#b8c4d5;letter-spacing:.12em">CORPORATE SOLUTIONS · CAPITAL · PROPERTY · GROWTH</small></span></a><p style="margin-top:16px;max-width:380px">Sarovaram Corporate Solutions is a business brand operated by Alooma Holdings Private Limited.</p></div>
-      <div><h3>Explore</h3><div class="footer-links"><a href="#about">About Us</a><a href="#divisions">Business Divisions</a><a href="#services">Services</a><a href="commercial-property.html">Commercial Property</a><a href="business-listings.html">Business Listings</a><a href="#process">Our Process</a><a href="#contact">Contact</a></div></div>
-      <div><h3>Contact</h3><div class="footer-links"><a href="tel:+919447907637">Call: 94479 07637</a><a href="https://wa.me/919447907637" target="_blank" rel="noopener noreferrer">WhatsApp: 94479 07637</a><a href="mailto:Ceoaloomacorp@gmail.com">Ceoaloomacorp@gmail.com</a><span>Greenland Heights, 4th Floor, KRA Business Centre, Near NH Bypass Junction, Nethaji Road, Palarivattom, Kochi, Kerala, India – 682025</span></div><h3 style="margin-top:20px">Information</h3><div class="footer-links"><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms & Conditions</a><a href="#faq">FAQs</a></div></div>
+      <div>
+        <a class="brand" href="#home">
+          <span class="brand-mark">S</span>
+          <span>
+            SAROVARAM<br>
+            <small style="font-weight:500;color:#b8c4d5;letter-spacing:.12em">
+              CORPORATE FINANCE · INVESTMENT · COMMERCIAL PROPERTY
+            </small>
+          </span>
+        </a>
+
+        <p style="margin-top:16px;max-width:380px">
+          Sarovaram Corporate Solutions is a business brand operated
+          by Alooma Holdings Private Limited.
+        </p>
+      </div>
+
+      <div>
+        <h3>Explore</h3>
+        <div class="footer-links">
+          <a href="#about">About Us</a>
+          <a href="#divisions">Business Divisions</a>
+          <a href="#services">Services</a>
+          <a href="#corporate-finance-advisory">Corporate Finance Advisory</a>
+          <a href="commercial-property.html">Commercial Property</a>
+          <a href="business-listings.html">Business Listings</a>
+          <a href="#process">Our Process</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div>
+        <h3>Contact</h3>
+        <div class="footer-links">
+          <a href="tel:+919447907637">Call: 94479 07637</a>
+          <a href="https://wa.me/919447907637" target="_blank" rel="noopener noreferrer">
+            WhatsApp: 94479 07637
+          </a>
+          <a href="mailto:Ceoaloomacorp@gmail.com">Ceoaloomacorp@gmail.com</a>
+          <span>
+            Greenland Heights, 4th Floor, KRA Business Centre,
+            Near NH Bypass Junction, Nethaji Road, Palarivattom,
+            Kochi, Kerala, India – 682025
+          </span>
+        </div>
+
+        <h3 style="margin-top:20px">Information</h3>
+        <div class="footer-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <a href="#faq">FAQs</a>
+        </div>
+      </div>
     </div>
-    <p class="disclaimer"><strong style="color:#f7f9fc">Important disclaimer:</strong> Sarovaram Fincorp is a loan facilitation service and not a lender. Loan approval, interest rates, fees and terms are determined by the relevant lending partner. Sarovaram does not guarantee loan approval, funding, investment returns, property transactions or any particular outcome. All services are subject to case-specific assessment and applicable terms.</p>
-    <p class="disclaimer" style="margin-top:14px"><strong style="color:#f7f9fc">Legal entity:</strong> Alooma Holdings Private Limited · CIN: U67100KL2020PTC065780. Sarovaram Corporate Solutions is the business brand. All engagements are undertaken by the relevant legal entity or authorised service provider identified in the applicable proposal, engagement letter, invoice or agreement.</p>
-    <p class="copyright">Capital · Property · Growth | © <span id="year"></span> Sarovaram Corporate Solutions. All rights reserved.</p>
+
+    <p class="disclaimer">
+      <strong style="color:#f7f9fc">Important Disclaimer:</strong>
+      Sarovaram Fincorp is a loan facilitation service and not a lender.
+      Loan approval, interest rates, fees and terms are determined by
+      the relevant lending partner. Sarovaram does not guarantee loan
+      approval, funding, investment returns, property transactions or
+      any particular outcome. All services are subject to case-specific
+      assessment and applicable terms. Advisory services do not
+      constitute a guarantee of funding, investment performance or
+      transaction completion. Scope, fees, responsibilities and
+      deliverables will be set out in the applicable engagement letter
+      or agreement.
+    </p>
+
+    <p class="disclaimer" style="margin-top:14px">
+      <strong style="color:#f7f9fc">Legal Entity:</strong>
+      Alooma Holdings Private Limited · CIN: U67100KL2020PTC065780.
+      Sarovaram Corporate Solutions is the business brand. All
+      engagements are undertaken by the relevant legal entity or
+      authorised service provider identified in the applicable proposal,
+      engagement letter, invoice or agreement. Please verify legal
+      details before publishing.
+    </p>
+
+    <p class="copyright">
+      Capital · Property · Growth |
+      © <span id="year"></span> Sarovaram Corporate Solutions.
+      All rights reserved.
+    </p>
   </div>
 </footer>
 
-<a class="floating-whatsapp" href="https://wa.me/919447907637?text=Hello%20Sarovaram%20Corporate%20Solutions%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener noreferrer" aria-label="Chat with Sarovaram on WhatsApp" title="Chat on WhatsApp">
-  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.02 3C8.86 3 3.03 8.77 3.03 15.87c0 2.28.61 4.5 1.77 6.45L3 29l6.89-1.79a13.1 13.1 0 0 0 6.13 1.52h.01c7.16 0 12.99-5.77 12.99-12.87 0-3.44-1.35-6.67-3.8-9.1A13 13 0 0 0 16.02 3zm.01 23.54h-.01a10.8 10.8 0 0 1-5.49-1.5l-.39-.23-4.09 1.06 1.09-3.95-.25-.4a10.57 10.57 0 0 1-1.65-5.65c0-5.93 4.85-10.76 10.8-10.76 2.88 0 5.59 1.12 7.63 3.15a10.66 10.66 0 0 1 3.17 7.6c0 5.93-4.85 10.76-10.81 10.76zm5.93-8.06c-.32-.16-1.9-.93-2.2-1.04-.3-.11-.51-.16-.73.16-.21.32-.84 1.04-1.03 1.25-.19.21-.38.24-.7.08-.32-.16-1.35-.49-2.57-1.56-.95-.83-1.59-1.86-1.78-2.18-.19-.32-.02-.49.14-.65.14-.14.32-.38.48-.57.16-.19.21-.32.32-.54.11-.21.05-.4-.03-.56-.08-.16-.73-1.73-1-2.37-.26-.62-.53-.54-.73-.55h-.62c-.21 0-.56.08-.86.4-.3.32-1.13 1.1-1.13 2.67s1.16 3.09 1.32 3.3c.16.21 2.28 3.46 5.52 4.85.77.33 1.37.53 1.84.68.77.24 1.47.21 2.02.13.62-.09 1.9-.77 2.17-1.52.27-.75.27-1.39.19-1.52-.08-.13-.29-.21-.62-.37z"/></svg>
+<a class="floating-whatsapp"
+   href="https://wa.me/919447907637?text=Hello%20Sarovaram%20Corporate%20Solutions%2C%20I%20would%20like%20to%20make%20an%20enquiry."
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Chat with Sarovaram on WhatsApp"
+   title="Chat on WhatsApp">
+
+  <svg viewBox="0 0 32 32" aria-hidden="true">
+    <path d="M16.02 3C8.86 3 3.03 8.77 3.03 15.87c0 2.28.61 4.5 1.77 6.45L3 29l6.89-1.79a13.1 13.1 0 0 0 6.13 1.52h.01c7.16 0 12.99-5.77 12.99-12.87 0-3.44-1.35-6.67-3.8-9.1A13 13 0 0 0 16.02 3zm.01 23.54h-.01a10.8 10.8 0 0 1-5.49-1.5l-.39-.23-4.09 1.06 1.09-3.95-.25-.4a10.57 10.57 0 0 1-1.65-5.65c0-5.93 4.85-10.76 10.8-10.76 2.88 0 5.59 1.12 7.63 3.15a10.66 10.66 0 0 1 3.17 7.6c0 5.93-4.85 10.76-10.81 10.76zm5.93-8.06c-.32-.16-1.9-.93-2.2-1.04-.3-.11-.51-.16-.73.16-.21.32-.84 1.04-1.03 1.25-.19.21-.38.24-.7.08-.32-.16-1.35-.49-2.57-1.56-.95-.83-1.59-1.86-1.78-2.18-.19-.32-.02-.49.14-.65.14-.14.32-.38.48-.57.11-.21.21-.32.32-.54.11-.21.05-.4-.03-.56-.08-.16-.73-1.73-1-2.37-.26-.62-.53-.54-.73-.55h-.62c-.21 0-.56.08-.86.4-.3.32-1.13 1.1-1.13 2.67s1.16 3.09 1.32 3.3c.16.21 2.28 3.46 5.52 4.85.77.33 1.37.53 1.84.68.77.24 1.47.21 2.02.13.62-.09 1.9-.77 2.17-1.52.27-.75.27-1.39.19-1.52-.08-.13-.29-.21-.62-.37z"/>
+  </svg>
 </a>
+
 <script>
-  const menuToggle = document.getElementById('menuToggle');
-  const navLinks = document.getElementById('navLinks');
-  menuToggle.addEventListener('click', () => {
-    const open = navLinks.classList.toggle('open');
-    menuToggle.setAttribute('aria-expanded', String(open));
-  });
-  navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+
+menuToggle.addEventListener('click', () => {
+  const isOpen = navLinks.classList.toggle('open');
+  menuToggle.setAttribute('aria-expanded', String(isOpen));
+});
+
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
     navLinks.classList.remove('open');
     menuToggle.setAttribute('aria-expanded', 'false');
-  }));
-  document.getElementById('year').textContent = new Date().getFullYear();
+  });
+});
 
-  const revealObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  }, {threshold: 0.12});
-  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+document.getElementById('year').textContent = new Date().getFullYear();
 
-  function prepareEnquiry(formId, statusId, title) {
-    const form = document.getElementById(formId);
-    if (!form) return;
-    form.addEventListener('submit', function(event) {
-      event.preventDefault();
-      const data = new FormData(this);
-      const lines = [title, ''];
-      for (const [key, value] of data.entries()) {
-        if (String(value).trim()) lines.push(key + ': ' + value);
+const revealObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal').forEach(element => {
+  revealObserver.observe(element);
+});
+
+function prepareEnquiry(formId, statusId, title) {
+  const form = document.getElementById(formId);
+
+  if (!form) return;
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const data = new FormData(this);
+    const lines = [title, ''];
+
+    for (const [key, value] of data.entries()) {
+      if (String(value).trim()) {
+        lines.push(key + ': ' + value);
       }
-      lines.push('', 'Sent from Sarovaram Corporate Solutions website.');
-      const message = lines.join('\n');
-      const status = document.getElementById(statusId);
-      status.textContent = 'WhatsApp is opening with your enquiry prepared. Please press Send in WhatsApp to deliver it.';
-      const url = 'https://wa.me/919447907637?text=' + encodeURIComponent(message);
-      window.open(url, '_blank', 'noopener,noreferrer');
-    });
-  }
-  prepareEnquiry('capitalForm', 'capitalStatus', 'Sarovaram Capital Advisors Enquiry');
-  prepareEnquiry('fincorpForm', 'fincorpStatus', 'Sarovaram Fincorp Financing Enquiry');
-  prepareEnquiry('enquiryForm', 'formStatus', 'Sarovaram Corporate Solutions General Enquiry');
+    }
+
+    lines.push('', 'Sent from Sarovaram Corporate Solutions website.');
+
+    const message = lines.join('\n');
+    const status = document.getElementById(statusId);
+
+    status.textContent =
+      'WhatsApp is opening with your enquiry prepared. Please press Send in WhatsApp to deliver it.';
+
+    const url =
+      'https://wa.me/919447907637?text=' + encodeURIComponent(message);
+
+    window.open(url, '_blank', 'noopener,noreferrer');
+  });
+}
+
+prepareEnquiry(
+  'enquiryForm',
+  'formStatus',
+  'Sarovaram Corporate Solutions General Enquiry'
+);
+
+prepareEnquiry(
+  'fincorpForm',
+  'fincorpStatus',
+  'Sarovaram Fincorp Financing Enquiry'
+);
 </script>
+
 </body>
 </html>
